@@ -1,0 +1,78 @@
+name: Publish to Cloudflare
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  generate-handlebars:
+    name: Generate Handlebars
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install build dependencies
+        run:  |
+          npm install handlebars -g
+
+      - name: Precompile handlebars
+        run: |
+          mkdir -p build/js
+          handlebars ./src/handlebars/* -f build/js/handlebars_precompiled.js
+
+      - name: Store artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
+
+  generate-html:
+    name: Generate HTML
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v3
+  
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+
+      - name: Install build dependencies
+        run: |
+          set -xe
+          python -VV
+          python -m site
+          python -m pip install --upgrade -r requirements.txt
+      
+      - name: Generate HTML
+        run: |
+          python src/generator.py
+
+      - name: Store artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
+
+  cloudflare-pages:
+    needs: ["generate-handlebars", "generate-html"]
+    name: Publish to Cloudflare Pages
+    permissions:
+      contents: read
+      deployments: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/download-artifact@v3
+
+      - name: Copy static files
+        run: |
+            cp -r src/static/* build
+
+      - name: Publish
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: docsplant
+          directory: build
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

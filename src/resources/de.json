@@ -1,0 +1,155 @@
+{
+    "language": "de",
+    "banner_section": {
+        "title": "Der Ort, an dem <br><span>Dokumentation</span><br> wächst und gedeiht",
+        "description": "Docsplant ist ein erfahrenes Team aus Experten im Bereich moderner technischer Dokumentation."
+    },
+    "features_section": {
+        "title": "Mithilfe von „Docs as Code“ bringen wir Ihre Dokumentation auf ein neues Level.",
+        "experience": {
+            "title": "Erfahrung",
+            "description": "Unser Team aus Software-Entwicklern und Autoren arbeitet, hat langjährige Erfahrung im Planen, Erstellen und Warten verschiedenster Dokumentation."
+        },
+        "support": {
+            "title": "Support",
+            "description": "Mit Sitz in der Schweiz offerieren wir nicht nur hilfreiche Trainings vor Ort, sondern helfen Ihnen auch gerne beim Erstellen und Warten Ihrer Dokumentation."
+        },
+        "open_source": {
+            "title": "Open Source",
+            "description": "Open Source spielt nicht nur in der Auswahl unsere verwendeten Tools eine Rolle, sondern spiegelt sich auch in unserer Firmen-Philosophie wider. Wir entwickeln also keine geheimen Lösungen, die nur wir verstehen, sondern verbessern stattdessen bestehende Lösungen. Unser Ziel ist eine langfristige Zusammenarbeit mit Ihnen, wozu sollten wir also etwas verheimlichen?"
+        }
+    },
+    "dac_section": {
+        "title": "„Docs as Code zielt darauf ab, Dokumentation auf dieselbe Weise wie Software zu erstellen und zu warten.“",
+        "elements": [
+            {
+                "title": "Dokumentation und Programm Code im selben Projekt",
+                "description": "Kaum etwas ist frustrierender als eine überholte Dokumentation. Die einfachste Möglichkeit sicherzustellen, dass die Dokumentation immer aktuell ist, ist sie im selben Projekt wie das Produkt selbst zu warten."
+            },
+            {
+                "title": "Continuous Integration und Deployment (CI/CD)",
+                "description": "Bestimmt haben Sie gewisse Ansprüche, wie Rechtschreibung oder Klarheit, an Ihre Dokumentation? Nichts einfacher als das. Mithilfe von kontinuierlicher Integration (CI) kann dies jeder neuen Anpassung automatisch sichergestellt werden. Und dank (teil-)automatischer Veröffentlichung müssen Sie sich auch keine Sorgen mehr machen, dass die Dokumentation veraltet sein könnte."
+            },
+            {
+                "title": "Zusammenarbeit zwischen Authoren und Entwickler.",
+                "description": "Je enger alle Beteiligten zusammenarbeiten, desto effizienter wird ein Prozess. Nicht zur können Informationen und Feedback einfacher ausgetauscht werden, auch die Planung vereinfacht sich."
+            }
+        ]
+    },
+    "quote_section": [
+        {
+            "quote": "Es sollte genauso einfach sein an einer Dokumentation mitzuwirken wie eine E-Mail zu verfassen.",
+            "description": "Ein Abschluss in Informatik oder stundenlanges Einlesen sollte nicht Voraussetzung sein."
+        },
+        {
+            "quote": "Entwicklern sollte es leicht fallen, an der Dokumentation mitzuwirken.",
+            "description": "Das geht am einfachsten, wenn die bereits bekannten Tools wiederverwendet werden können."
+        }
+    ],
+    "timeline_section": {
+        "title": "Phasen einer Dokumentation",
+        "elements": [
+            {
+                "title": "01 &nbsp;&nbsp; Analyse",
+                "description": "Da „Docs as Code“ darauf abzielt, Dokumentation auf dieselbe Art und Weise wie Software zu erstellen, muss als Erstes analysiert werden, wie das Entwicklungsteam arbeitet. Jedes Entwicklungsteam arbeitet unterschiedlich, eine Blaupause kann es also nicht geben. Gerne helfen wir Ihnen, als ersten Schritt eine kostenlose Momentaufnahme der aktuellen Prozesse zu erstellen."
+            },
+            {
+                "title": "02 &nbsp;&nbsp; Überzeugung des Teams",
+                "description": "Selbst die beste Idee ist nutzlos, ohne Rückhalt im Team. Nur wenn jeder bereit ist, etwas zu verändern und beizutragen, kann ein neuer Ansatz langfristig Früchte tragen. Durch unsere Erfahrung können wir alle aufkommenden Fragen beantworten und vermeiden so Verunsicherung."
+            },
+            {
+                "title": "03 &nbsp;&nbsp; Design",
+                "description": "Für einen langfristigen Erfolg braucht es ein gutes Design. Hilfreich sind hier vor allein ein umfassender Gesamtüberblick und Erfahrung. Da kaum ein Produkt statisch ist, sollte zudem stets ein Blick auf die Erweiterbarkeit und den Wartungsaufwand geworfen werden. „Trial-and-Error“ ist in diesem Schritt wohl kaum dein guter Ansatz und kann schnell kostspielig werden. "
+            },
+            {
+                "title": "04 &nbsp;&nbsp; Umsetzung",
+                "description": "Oft kann ein Grossteil der bestehen Infrastruktur aus dem Entwicklungsteam einfach übernommen werden. Das Erstellen der Pipelines und Arbeitsabläufe so wie das Zusammenführen beider Welten ist jedoch nicht auf die leichte Schulter zu nehmen. Je nachdem, wo die Stärken Ihres Teams liegen, gelingt dieser Schritt mehr oder weniger einfach. Gerne helfen wir Ihnen mit unsere Ressourcen und Wissen."
+            },
+            {
+                "title": "05 &nbsp;&nbsp; Wartung und Wachstum",
+                "description": "„Das Verhältnis zwischen Autoren und Entwicklern sollte den Faktor 1:10 nicht unterschreiten.“ So sagt es zumindest das Erfolgsrezept vieler erfolgreicher Technologie-Firmen. Zu begründen ist dies durch die ständige Veränderung und das Wachstum mit dem Produkt. Der Wartungsaufwand, egal auf welche Weise Dokumentation geschrieben wird, ist somit nicht zu unterschätzen. Verständlich ist, aber auch sich dieses Verhältnis nicht immer umsetzten lässt, gerade auf kurze Sicht. Wir sind uns dessen bewusst und nehmen Ihnen gerne das Risiko und den Aufwand ab. Dabei legen wir unseren Fokus auf organischen Wachstum und teilen unser Wissen und Aufgaben mit Ihnen."
+            },
+            {
+                "title": "06 &nbsp;&nbsp; Austausch",
+                "description": "Unsere Passion ist es, die bestmögliche Dokumentation zu erstellen. Dies führt dazu, dass wir täglich Neues lernen und entwickeln. Über unseren Blog und Trainings teilen wir dieses Wissen und tragen so dazu bei, dass gute Dokumentation nicht nur ein Mythos bleibt."
+            }
+        ]
+    },
+    "faq_section": {
+        "tag": "FAQs",
+        "title": "Häufig gestellte Fragen",
+        "description": "Haben Sie eine Frage? Wir sind für Sie da.",
+        "questions": [
+            {
+                "question": "Warum macht Ihr aus Dokumentation ein solch grosses Ding?",
+                "answer": "Die wohl bessere Frage ist, weshalb Sie dies nicht tun. Es ist unter anderem der erste Ort, an dem Kunden nach Hilfe zu Ihren Produkten suchen. Finden Kunden die Antwort auf Ihre Frage nicht in Ihrer Dokumentation, fragen sie im besten Fall bei nach und verursachen so nur einen geringen Mehraufwand, aber selbst dies skaliert nicht. Im schlechtesten Fall übernehmen sie eine veraltete Lösung aus dem Internet oder wechseln sogar zur Konkurrenz. Gute Dokumentation erhöht also nicht nur die Kundenzufriedenheit, sondern reduziert auch den Support-Aufwand deutlich."
+            },
+            {
+                "question": "Wenn alles Open Source ist, kann ich es doch auch selbst machen?",
+                "answer": "Selbstverständlich und das ist auch genau die Idee dahinter. Sämtliche Informationen, Frameworks und Tools, die wir verwenden, sind, Open Source (oder zumindest frei verfügbar). Was wir anbieten, sind unsere Erfahrung und unsere Ressourcen."
+            },
+            {
+                "question": "Mit welchen Kosten muss ich rechnen?",
+                "answer": "Leider gibt es für gute Dokumentation einfach anzuwendendes Baukastenprinzip. Aus Erfahrung wissen wir, dass vor allem die Wartung und Pflege den grössten Teil der Kosten ausmachen. Ein gutes Design zahlt sich hier aus. Gerne helfen wir Ihnen kostenlos bei einer ersten Analyse und erstellen mit Ihnen einen Plan."
+            },
+            {
+                "question": "Unterstützt ihr auch Kunden ausserhalb der Schweizer?",
+                "answer": "Aktuell nicht. Schnelle und lokaler Support ist uns ein grosses Anliegen, deshalb beschränkt sich unser Angebot aktuell auf die Schweiz."
+            },
+            {
+                "question": "Welche verschiedenen Trainings biete Ihr an?",
+                "answer": "Wir passen jedes Training individuell an unsere Kunden an. Sollten Sie Interesse an einem bestimmten Thema haben, fragen Sie uns gerne unverbindlich an. Folgende Themen werden häufiger angefragt: <ul><li>Einstieg in „Docs as Code“</li><li>technische Dokumentation für Entwickler</li><li>CI/CD einfach erklärt</li><li>Die 5K's technischer Dokumentation</li></ul>"
+            },
+            {
+                "question": "Wie sehen die ersten Schritte aus?",
+                "answer": "Unsere Empfehlung ist eine kostenlose und unverbindliche Übersicht. Dies beinhaltet eine Analyse Ihrer aktuellen Dokumentation und Arbeitsweisen."
+            }
+        ]
+    },
+    "get_started_section": {
+        "title": "Sind Sie bereits loszulegen?",
+        "description": "Wir stehen bereits in den Startlöchern, bereit um Ihnen zu helfen.",
+        "button": "Mehr"
+    },
+    "legal": {
+        "title": "Rechtliche Hinweise (Disclaimer)",
+        "description": "Bitte beachten Sie die wichtigen rechtlichen Hinweise zu den Inhalten und zur Verfügbarkeit dieser Website, zum Urheberrecht und zu externen Links.",
+        "sections": [
+            {
+                "title": "Inhalte dieser Website",
+                "content": "Die Inhalte dieses Webauftritts werden mit größtmöglicher Sorgfalt erstellt. Docsplant übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte."
+            },
+            {
+                "title": "Verfügbarkeit der Website",
+                "content": "Docsplant wird sich bemühen, den Dienst möglichst unterbrechungsfrei zum Abruf anzubieten. Auch bei aller Sorgfalt können aber Ausfallzeiten nicht ausgeschlossen werden. Wir behalten uns das Recht vor, unser Angebot jederzeit zu ändern oder einzustellen. Für durch nicht fehlerfrei angelegte Dateien oder nicht fehlerfrei strukturierte Formate bedingte Unterbrechungen oder anderweitige Störungen können wir keine Gewähr übernehmen."
+            },
+            {
+                "title": "Urheberrecht",
+                "content": "Alle Inhalte und Strukturen dieser Website sind urheber- und leistungsschutzrechtlich geschützt. Die Veröffentlichung im World Wide Web oder in sonstigen Diensten des Internets bedeutet noch keine Einverständniserklärung für eine anderweitige Nutzung durch Dritte. Jede vom schweizer Urheberrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung von Docsplant.",
+                "addition": "Wir erlauben und begrüßen ausdrücklich das Zitieren unserer Dokumente sowie das Setzen von Links auf unsere Website, solange kenntlich gemacht wird, dass es sich um Inhalte des Webauftritts von Docsplant handelt und diese Inhalte nicht in Verbindung mit Inhalten Dritter gebracht werden, die den Interessen von Docsplant widersprechen."
+            },
+            {
+                "title": "Hinweis zur Problematik von externen Links",
+                "content": "Docsplant ist als Inhaltsanbieterin nach § 7 Abs. 1 Telemediengesetz für die eigenen Inhalte, die sie zur Nutzung bereithält, nach den allgemeinen Gesetzen verantwortlich. Von diesen eigenen Inhalten sind Querverweise (Links) auf die von anderen Anbietern bereitgehaltenen Inhalte zu unterscheiden. Durch den Querverweis hält Docsplant insofern fremde Inhalte zur Nutzung bereit, die als „Link“ gekennzeichnet sind.",
+                "addition": "Bei Links handelt es sich stets um dynamische Verweisungen. Docsplant hat bei der erstmaligen Verknüpfung zwar den fremden Inhalt daraufhin überprüft, ob durch ihn eine mögliche zivilrechtliche oder strafrechtliche Verantwortlichkeit ausgelöst wird. Wir überprüfen aber die Inhalte, auf die wir in unserem Angebot verweisen, nicht ständig auf Veränderungen, die eine Verantwortlichkeit neu begründen könnten. Wenn wir feststellt oder von anderen darauf hingewiesen werden, dass ein konkretes Angebot, zu dem wir einen Link bereitgestellt haben, eine zivil- oder strafrechtliche Verantwortlichkeit auslöst, werden wir den Verweis auf dieses Angebot aufheben."
+            }
+        ]
+    },
+    "privacy": {
+        "title": "Datenschutzerklärung",
+        "description": "At Docsplant we care about your privacy. To ensure that you receive the information that matters the most to you, we need to collect and process information provided by you.",
+        "sections": [
+            {
+                "title": "Scope",
+                "content": "At Docsplant we care about your privacy. To ensure that you receive the information that matters the most to you, we need to collect and process information provided by you."
+            }
+        ]
+    },
+    "about": {
+        "title": "Impressum"
+    },
+    "submission": {
+        "title": "Vielen Dank!",
+        "info": "Ihre Nachricht wurde erfolgreich gesendet."
+    }
+}

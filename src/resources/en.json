@@ -1,0 +1,155 @@
+{
+    "language": "en",
+    "banner_section": {
+        "title": "Nurture and grow your Technical <span>Documentation</span>",
+        "description": "Take advantage of our experience throughout the documentation stack."
+    },
+    "features_section": {
+        "title": "We are the experts for Technical Documentation, powered by the idea of “Docs as Code”.",
+        "experience": {
+            "title": "Experience",
+            "description": "Our team of software engineers and technical writers have experience in every stage of the documentation process."
+        },
+        "support": {
+            "title": "Support",
+            "description": "Located in Switzerland, we not only offer helpful trainings but also assist you in creating and maintaining your Documentation."
+        },
+        "open_source": {
+            "title": "Open Source",
+            "description": "We're passionate about open source. Both when it comes to our company values and the tools we use. Instead of writing closed software, we contribute to existing projects. This means that there are no hidden costs or proprietary solutions that only we can maintain."
+        }
+    },
+    "dac_section": {
+        "title": "“Docs as Code refers to the idea to create and maintain documentation the same way as code.”",
+        "elements": [
+            {
+                "title": "Keep documentation and code next to each other",
+                "description": "The one thing that gets readers frustrated the most is an outdated or incorrect documentation. Keeping the code and the documentation close together not only prevents that, but also makes it easier to version and update it."
+            },
+            {
+                "title": "Benefit from Continuous Integration and Deployment (CI/CD)",
+                "description": "Need to ensure Consistency, Correctness, and Clarity? Nothing easier than that! With continuous integration (CI) all of that happens automatically. And having a new version deployed with the click of a button just feels right."
+            },
+            {
+                "title": "Bring Technical Writers and Developers closer together",
+                "description": "Closing the gap between technical writers and developers is beneficial for everyone. Planing together with the same tools, giving and receiving feedback within the blink of an eye or adapting the code and documentation within a single merge request will come naturally."
+            }
+        ]
+    },
+    "quote_section": [{
+        "quote": "Contributing to documentation should be as easy as writing an email.",
+        "description": "You should not need a degree in information technology or invest hours of learning just to make a contribution to a documentation."
+    },
+    {
+        "quote": "Developers should love to improve the documentation.",
+        "description": "Contributing to documentation should be possible with the same tools you are used to when coding."
+    }
+    ],
+    "timeline_section": {
+        "title": "Documentation coming to life",
+        "elements": [
+            {
+                "title": "01 &nbsp;&nbsp; Analysis",
+                "description": "“Docs as Code” means that documentation should be created using the same tools and processes as the code development. Everyone does that differently, so there is no blueprint. We offer to take a snapshot of your current workflow, for free."
+            },
+            {
+                "title": "02 &nbsp;&nbsp; Win over the teams",
+                "description": "The best idea is worthless if you cannot convey it to your colleges. Only if everyone is up for the challenge, “Docs as Code” will work out. Trust us, we know from experience. But since we have gone through that multiple times, we are more than happy to answer all the questions that might arise."
+            },
+            {
+                "title": "03 &nbsp;&nbsp; Design",
+                "description": "Now that everyone is on the same track, a plan is needed. If implemented correctly, the solution will be sustainable. Therefore, it must be easy to expand and maintain. We are always on the cutting edge when it comes to the newest insights, frameworks, and tools. And since we use them daily, we can propose what's best for you in the long term."
+            },
+            {
+                "title": "04 &nbsp;&nbsp; Implement",
+                "description": "The infrastructure is shared with the development team, so often there is little or nothing to extend. However, implementing the pipelines and workflows as well as putting everything together is another story. And don't forget about adapting the existing content and writing the new one. Depending on the strengths of your team, you might be able to do that with breeze. If not, we are here to fill the gaps for you."
+            },
+            {
+                "title": "05 &nbsp;&nbsp; Maintain and Grow",
+                "description": "“For every 10th developer in your team, you should have a technical writer supporting them”. This is the best practice a lot of successful tech companies stick to. The reason for that is the constant change and growth documentation is going through. But here is the thing: not everyone can or wants to afford the same ratio as big tech companies. Especially at the beginning. We understand that. So, we will help you out as long as needed. And if you like, we will help you grow and train your team on the way, so you don't need to rely on us forever."
+            },
+            {
+                "title": "06 &nbsp;&nbsp; Exchange",
+                "description": "We love documentation and constantly learn more about it. The best thing we can do is to share it with you. So take a look at our blog section and ask us any question you might have. Information should be free for everyone. We also recommend joining Communities like “Write the Docs” to have a source a knowledge and conferences, stay on the edge."
+            }
+        ]
+    },
+    "faq_section": {
+        "tag": "FAQs",
+        "title": "Frequently asked question",
+        "description": "Have a question? We’re here to help.",
+        "questions": [
+            {
+                "question": "Why do you make such a big deal out of documentation?",
+                "answer": "Why don't you? It's the first place users will search for help when they use your product. If they don't find the answer for their question there, they will create a support case, in the best case. It may create additional workload, but it's better than having a customer turn to a shady internet forum or switch to your competitor. Therefore, good documentation does not only improve customer satisfaction, but also can reduce support cases."
+            },
+            {
+                "question": "But I can do that all by myself, right?",
+                "answer": "Yes. All the information, frameworks, and tools we use are open source (or at least available for everyone). We just offer our experience and resources."
+            },
+            {
+                "question": "Who much does it cost?",
+                "answer": "This highly depends on what you need, unfortunately there is no blueprint that can be applied. We therefore encourage you to get in contact with us. The analysis and first steps are without any cost."
+            },
+            {
+                "question": "What kind of trainings do you offer?",
+                "answer": "We build the training aground our customers and not the other way around. If you are interested in a certain topic, feel free to ask us for a quote. Here is a small collection of trainings and presentations we did: <ul><li>Getting Started with “Docs as Code”</li><li>Technical Writing as a Developer</li><li>CI/CD for non programmers.</li><li>The 5C's about technical writing</li></ul>"
+            },
+            {
+                "question": "Do you only support Swiss-based clients?",
+                "answer": "Yes. We want to provide the best service for our clients, and currently can only ensure this within Switzerland."
+            },
+            {
+                "question": "What will be the first steps?",
+                "answer": "The first thing we recommend is a free analysis of your current documentation or product. This helps both you and us to create a roadmap that fits your needs best."
+            }
+        ]
+    },
+    "get_started_section": {
+        "title": "Read to get started?",
+        "description": "We can't wait to see how we can help you getting the most out of your documentation.",
+        "button": "Learn More"
+    },
+    "legal": {
+        "page_name": "legal",
+        "title": "Legal Notice (Disclaimer)",
+        "description": "Please note these important legal information regarding the content and availability of this website, copyright and external links.",
+        "sections": [
+            {
+                "title": "Contents of this website",
+                "content": "The contents of this website have been created with the utmost care. However, docsplant does not guarantee the accuracy, completeness and timeliness of the content provided."
+            },
+            {
+                "title": "Availability of the website",
+                "content": "Docsplant will make every effort to provide the service as uninterruptedly as possible. However, even with all due care, downtime cannot be ruled out. We reserve the right to change or discontinue our offer at any time. We cannot guarantee for interruptions or other disturbances caused by files or formats that are not structured error-free."
+            },
+            {
+                "title": "Copyright",
+                "content": "All contents and structures of this website are protected by copyright and ancillary copyright. The publication in the World Wide Web or in other services of the Internet does not imply any declaration of consent for any other use by third parties. Any use not permitted by Swiss copyright law requires the prior written consent of docsplant.",
+                "addition": "We allow and welcome the citation of our documents as well as the setting of links to our website, as long as it is made clear that these are contents of docsplant's website and that these contents are not associated with contents of third parties that are contrary to the interests of docsplant."
+            },
+            {
+                "title": "Note on the problem of external links",
+                "content": "According to general law, docsplant is responsible for its own content that we make available for use. A distinction must be made between our own content and cross-references (links) to content provided by other providers. These cross-reference enable docsplant to makes third-party content available for use and we marked them as a „link“.",
+                "addition": "Links are always dynamic references. When the link was first created, docsplant checked whether the third-party content might give rise to any civil or criminal liability. However, we do not constantly check the content to which we refer in our offer for changes that could give rise to a new responsibility. If we notice or are informed by others that a specific offer to which we have provided a link triggers civil or criminal liability, we will remove the reference to this offer."
+            }
+        ]
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "description": "At docsplant we care about your privacy. To ensure that you receive the information that matters the most to you, we need to collect and process information provided by you.",
+        "sections": [
+            {
+                "title": "Scope",
+                "content": "At docsplant we care about your privacy. To ensure that you receive the information that matters the most to you, we need to collect and process information provided by you."
+            }
+        ]
+    },
+    "about": {
+        "title": "About"
+    },
+    "submission": {
+        "title": "Thank you!",
+        "info": "Your message was sent successfully."
+    }
+}

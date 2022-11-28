@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script>
+    if ((navigator.language || navigator.userLanguage).includes("de")) {
+        window.location.replace(window.location.origin + window.location.pathname.split('/').slice(0, -1).join("/") + "/de")
+    }
+    else {
+        window.location.replace(window.location.origin + window.location.pathname.split('/').slice(0, -1).join("/") + "/en")
+    }
+</script>
+
+<head>
+    <meta http-equiv="refresh" content="0; url='https://docsplant.com/en/index.html'" />
+</head>
+
+<body>
+    <p>Please follow this link to <a href="https://docsplant.com/en/index.html">https://docsplant.com/en/index.html</a>.
+    </p>
+</body>
+
+</html>
