@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.res.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+
+<body>
+  <!-- load theme before rest to avoid flickering -->
+  <script src="./js/theme_toggle.js"></script>
+  <div id="app">
+    <!-- Header Area Start -->
+    <header id="headerMain" class="header-area">
+    </header>
+    <!-- Header Section End -->
+
+    <!-- main sections starts -->
+    <main class="main_sections">
+      <section class="privacy-section"></section>
+      <div class="container">
+        <div class="privacy-contant">
+          <div class="privacy-title">
+            <h3>Terms and Conditions</h3>
+          </div>
+          <div class="pri-content">
+            <p>
+              At Docsplant we care about your privacy. To ensure that you
+              receive the information that matters the most to you, we need to
+              collect and process information provided by you.
+            </p>
+            <h4>Scope</h4>
+            <p>
+              This privacy policy applies to all personal data processed by
+              full-time and part-time employees of Docsplant as well as all
+              legal entities, all operating locations in all countries, and
+              all business and support processes conducted by Docsplant.
+            </p>
+            <h4>What information do we collect?</h4>
+            <span>Docsplant collects the following personal and related data in
+              line with the use purposes explained below:</span>
+            <ul>
+              <li>Your name and contact details</li>
+              <li>Job Title and Organization</li>
+              <li>Other information you upload or provide to us</li>
+              <li>
+                Details of interactions with you as a customer or a potential
+                customer of Docsplant
+              </li>
+              <li>Purchasing and payment information</li>
+              <li>
+                Personal data and documents in the context of the recruitment
+                process
+              </li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- =====================================================================
+                                  Privacy Section End
+    ====================================================================== -->
+    </main>
+    <!-- main sections ends -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer_main" id="footer"></footer>
+    <!-- Footer Section End -->
+
+    <div class="contact-massage" id="contact-button">
+    </div>
+
+    <!-- Contact form popup -->
+    <div class="contact-popup-area" id="contact-form">
+    </div>
+  </div>
+  <!-- bootstrap js -->
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- custom js -->
+  <script src="./js/main.js"></script>
+
+  <script src="./js/handlebars_precompiled.js"></script>
+  <script>
+    document.getElementById('headerMain').innerHTML = Handlebars.templates['header.hbs']({show_home_button:true})
+    document.getElementById('footer').innerHTML = Handlebars.templates['footer.hbs']({})
+    document.getElementById('contact-button').innerHTML = Handlebars.templates['contact_button.hbs']({})
+    document.getElementById('contact-form').innerHTML = Handlebars.templates['contact_form.hbs']({})
+  </script>
+</body>
+
+</html>

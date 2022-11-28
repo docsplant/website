@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docs Plant</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.res.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+
+<body>
+  <!-- load theme before rest to avoid flickering -->
+  <script src="./js/theme_toggle.js"></script>
+  <!-- predefine frequently used svgs in hidden symbol -->
+  <svg style="display: none" version="2.0">
+    <defs>
+      <symbol id="circle-arrow-plus" fill="var(--primary_light)" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+      </symbol>
+    </defs>
+    <use href="#circle-arrow-plus" />
+  </svg>
+  <svg style="display: none" version="2.0">
+    <defs>
+      <symbol id="circle-arrow-minus" fill="var(--primary_light)" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+      </symbol>
+    </defs>
+    <use href="#circle-arrow-minus" />
+  </svg>
+  <svg style="display: none" version="2.0">
+    <defs>
+      <symbol id="quote_symbol" fill="none" viewBox="0 0 84 84">
+          <path
+            d="M7 43.2249H27.3C32.655 43.2249 36.33 47.2849 36.33 52.2549V63.525C36.33 68.495 32.655 72.5549 27.3 72.5549H16.0301C11.0601 72.5549 7 68.495 7 63.525V43.2249"
+            stroke="var(--text)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 43.2248C7 22.0498 10.9551 18.55 22.8551 11.48" stroke="var(--text)" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M47.705 43.2249H68.005C73.36 43.2249 77.035 47.2849 77.035 52.2549V63.525C77.035 68.495 73.36 72.5549 68.005 72.5549H56.7351C51.7651 72.5549 47.705 68.495 47.705 63.525V43.2249"
+            stroke="var(--text)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M47.705 43.2248C47.705 22.0498 51.6599 18.55 63.5599 11.48" stroke="var(--text)"
+            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    </defs>
+    <use href="#quote_symbol" />
+  </svg>
+  <svg style="display: none" version="2.0">
+    <defs>
+      <symbol id="arrow_symbol" fill="none" viewBox="0 0 101 71" fill="none">
+        <path
+        d="M14.2366 59.5194C29.5517 39.1204 41.0419 27.2794 66.7656 24.1169C73.0089 23.3493 83.0284 21.3347 89.0777 24.0052C92.5138 25.522 96.7509 24.427 92.1487 28.0976C88.3586 31.1205 82.9684 35.8381 78.2723 37.3207C76.5763 37.8562 91.7989 28.2332 96.5529 25.4965C102.631 21.9978 74.2046 8.82096 69.5143 6.41229"
+        stroke="var(--text)" stroke-width="5" stroke-linecap="round" />
+      <circle cx="13.5" cy="57.5" r="13.5" fill="var(--background)" />
+      <circle cx="13.5" cy="57.5" r="9.5" fill="var(--secondary)" />
+      </symbol>
+    </defs>
+    <use href="#arrow_symbol" />
+  </svg>
+
+  <div id="app">
+    <!-- Header Area Start -->
+    <header id="headerMain" class="header-area">
+    </header>
+    <!-- Header Section End -->
+
+    <!-- main sections starts -->
+    <main class="main_sections">
+      <!-- Banner Section Start -->
+      <section class="banner-section section">
+        <div class="container">
+          <div class="banner-title">
+            <h1>
+              Nurture and grow your Technical <span>Documentation</span>
+            </h1>
+            <p>
+              Take advantage of our experience throughout the documentation
+              stack. We are able to fill every gap you might encounter.
+            </p>
+          </div>
+          <div class="banner-image">
+            <img src="assets/images/landing.svg" class="normal_img">
+            <img src="assets/images/landing_dark.svg" class="white_img">
+          </div>
+        </div>
+      </section>
+      <!-- Banner Area End -->
+
+      <!-- Features Section Start -->
+      <section class="features_section section">
+        <div class="container">
+          <div class="row gx-0 gy-5 gy-lg-0 justify-content-between">
+            <div class="col-lg-5">
+              <div class="content">
+                <h3 class="mb-5">
+                  We are the experts for Technical Documentation powered by
+                  the idea of “Docs as Code”.
+                </h3>
+                <div class="text-center text-lg-start">
+                  <img src="assets/images/dot_map.svg" class="normal_img">
+                  <img src="assets/images/dot_map_dark.svg" class="white_img">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <ul class="features__items reboot-list">
+                <li class="features__item">
+                  <h3>Experience</h3>
+                  <p>
+                    Our team of software engineers and technical writers have
+                    experience in every stage of the documentation process.
+                  </p>
+                </li>
+                <li class="features__item">
+                  <h3>Support</h3>
+                  <p>
+                    Because we work fully remote, we are able to support you
+                    around the world. Since we are located in Switzerland, we
+                    can even offer on side support and training to all regions
+                    nearby.
+                  </p>
+                </li>
+                <li class="features__item">
+                  <h3>Open Source</h3>
+                  <p>
+                    We're passionate about open source. Both when it comes to
+                    our company and the tools we use. This means that there
+                    are no hidden costs or proprietary solutions that only we
+                    can maintain.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features Section End -->
+
+      <!-- Doc  FAQ Section Start -->
+      <section class="doc-faq-section section">
+        <div class="container">
+          <div class="doc-faq-header section_header">
+            <h2>
+              “Docs as Code refers to the idea to create and maintain
+              documentation the same way as code.”
+            </h2>
+            <svg width="132" height="167" viewBox="0 0 132 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.4076 73.1061C39.4055 78.9418 91.72 79.8997 117.57 51.8942C123.646 45.3118 136.075 16.3686 124.917 7.9154C110.762 -2.80839 91.3775 6.78841 83.1164 18.9393C71.281 36.3476 68.0137 67.4271 71.5178 88.3273C74.3193 105.037 80.0568 119.471 85.3869 135.44C88.0253 143.345 94.4213 152.626 95.3702 160.703C96.5773 170.976 105.991 139.543 105.799 132.749C105.761 131.418 101.32 154.858 104.054 162.647C105.416 166.528 90.1087 158.692 88.6186 158.019C78.0123 153.223 66.5717 150.539 55.3839 148.033"
+                stroke="var(--primary_light)" stroke-width="5" stroke-linecap="round" />
+            </svg>
+          </div>
+
+          <div class="accordion" id="accordionDocsCode">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                  <div class="h3 mb-0">
+                    Keep documentation and code next to each other
+                  </div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionDocsCode">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="h3 mb-0">
+                    Benefit from Continuous Integration and Deployment (CI/CD)
+                  </div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionDocsCode">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <div class="h3 mb-0">
+                    Bring Technical Writers and Developers closer together
+                  </div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionDocsCode">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section End -->
+
+      <!-- Contributing Section Start -->
+      <section class="contributing-seaction section">
+        <div class="container">
+          <div class="contributing-quote">
+            <div class="quote-img">
+              <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="#quote_symbol"/>
+              </svg>
+            </div>
+            <div class="quote-title">
+              <h3>
+                Contributing to documentation should be as easy as writing an
+                email.
+              </h3>
+              <p>
+                You should not need a degree in information technology to
+                contribute to any documentation.
+              </p>
+            </div>
+          </div>
+          <div class="contributing-img">
+            <img src="assets/images/docsplan_logo_plain.svg" class="normal_img">
+            <img src="assets/images/docsplan_logo_plain_dark.svg" class="white_img">
+          </div>
+          <div class="contributing-quote contributing-two">
+            <div class="quote-img">
+              <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="#quote_symbol"/>
+              </svg>
+            </div>
+            <div class="quote-title">
+              <h3>Developers should love to improve the documentation.</h3>
+              <p>
+                Contributing to documentation should be possible with the same
+                tools you are used to when coding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contributing Seaction End -->
+
+      <!-- Timeline Seaction Start -->
+      <section class="timeline-section section">
+        <div class="container">
+          <div class="timeline-header">
+            <h2>Documentation coming to life</h2>
+            <p>We support you during every stage of your documentation.</p>
+          </div>
+          <!-- single-timeline -->
+          <div class="single-timeline analysis timeline-padding">
+            <div class="timeline-img timeline-img-1">
+              <img src="assets/images/silene_dioica_seed.svg" class="normal_img">
+              <img src="assets/images/silene_dioica_seed_dark.svg" class="white_img">
+              <span class="arrow_icon">
+                <svg width="101" height="71">
+                  <use href="#arrow_symbol" />
+                </svg>
+              </span>
+            </div>
+            <div class="timeline-text">
+              <h2>01 &nbsp;&nbsp; Analysis</h2>
+              <p>
+                “Docs as Code” means that documentation should be created
+                using the same tools and processes as the code development.
+                Everyone does that differently, so there is no blueprint. We
+                offer to take a snapshot of your current workflow, for free.
+              </p>
+            </div>
+          </div>
+          <!-- single-timeline -->
+          <div class="single-timeline win-timeline timeline-padding">
+            <div class="timeline-text">
+              <h2>02 &nbsp;&nbsp; Win over the teams</h2>
+              <p>
+                The best idea is worthless if you cannot convey it to your
+                colleges. Only if everyone is up for the challenge, “Docs as
+                Code” will work out. Trust us, we know from experience. But
+                since we have gone through that multiple times, we are more
+                than happy to help you to “plant that seed”.
+              </p>
+            </div>
+            <div class="timeline-img timeline-img-2">
+              <span class="arrow_icon">
+                <svg width="101" height="71">
+                  <use href="#arrow_symbol" />
+                </svg>
+              </span>
+              <img src="assets/images/silene_dioica_seedling.svg" class="normal_img">
+              <img src="assets/images/silene_dioica_seedling_dark.svg" class="white_img">
+            </div>
+          </div>
+          <!-- single-timeline -->
+          <div class="single-timeline design-timeline">
+            <div class="timeline-img timeline-img-3">
+              <span class="arrow_icon">
+                <svg width="101" height="71">
+                  <use href="#arrow_symbol" />
+                </svg>
+              </span>
+              <img src="assets/images/silene_dioica_root.svg" class="normal_img" width="426.28122" height="710.77435">
+              <img src="assets/images/silene_dioica_root_dark.svg" class="white_img" width="426.28122" height="710.77435">
+            </div>
+            <div class="timeline-text">
+              <h2>03 &nbsp;&nbsp; Design</h2>
+              <p>
+                Now that everyone is on the same track, a plan is needed. If
+                implemented correctly, the solution will be sustainable.
+                Therefore, it must be easy to expand and maintain.We are
+                always on the cutting edge when it comes to the newest
+                insights, frameworks, and tools. And since we use them daily,
+                we can propose what's best for you in the long term.
+              </p>
+            </div>
+          </div>
+          <!-- single-timeline -->
+          <div class="single-timeline">
+            <div class="timeline-text-implement">
+              <h2>04 &nbsp;&nbsp; Implement</h2>
+              <p>
+                The infrastructure is shared with the development team, so
+                often there is little or nothing to extend. However,
+                implementing the pipelines and workflows as well as putting
+                together the used framework is another story. And don't forget
+                about adapting the existing content and writing the new
+                one.Depending on the strengths of your team, you might be able
+                to do that with breeze. If not, we are here to fill the gaps
+                for you.
+              </p>
+
+              <div class="timeline-img timeline-img-4 d-md-none">
+                <span class="arrow_icon">
+                  <svg width="101" height="71">
+                    <use href="#arrow_symbol" />
+                  </svg>
+                </span>
+                <span class="arrow_icon">
+                  <svg width="101" height="71">
+                    <use href="#arrow_symbol" />
+                  </svg>
+                </span>
+                <img src="assets/images/silene_dioica_flower.svg" class="normal_img" width="384.37463" height="821.5462">
+                <img src="assets/images/silene_dioica_flower_dark.svg" class="white_img" width="384.37463" height="821.5462">
+              </div>
+              <div class="maintain-text">
+                <h2>05 &nbsp;&nbsp; Maintain and Grow</h2>
+                <p>
+                  “For every 10th developer in your team, you should have a
+                  technical writer supporting them”. That's not a quote we
+                  have come up with, but the best practice of most tech
+                  giants. Like software, documentation is constantly changing
+                  and grows with your product. Therefore, it requires
+                  continuous maintenance.But here is the thing: not everyone
+                  can or wants to afford the same ratio as big tech companies.
+                  Especially at the beginning. We understand that. So, we will
+                  help you out as long as needed. And if you like, we will
+                  help you grow and train your team on the way, so you don't
+                  need to rely on us forever.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-img timeline-img-4 d-none d-md-block">
+              <span class="arrow_icon">
+                <svg width="101" height="71">
+                  <use href="#arrow_symbol" />
+                </svg>
+              </span>
+              <span class="arrow_icon">
+                <svg width="101" height="71">
+                  <use href="#arrow_symbol" />
+                </svg>
+              </span>
+              <img src="assets/images/silene_dioica_flower.svg" class="normal_img">
+              <img src="assets/images/silene_dioica_flower_dark.svg" class="white_img">
+            </div>
+          </div>
+          <!-- single-timeline -->
+          <div class="single-timeline exchange">
+            <div class="timeline-img timeline-img-5">
+              <img src="assets/images/silene_dioica_capsule.svg" class="normal_img">
+              <img src="assets/images/silene_dioica_capsule_dark.svg" class="white_img">
+              <span class="arrow_icon">
+                <svg width="101" height="71">
+                  <use href="#arrow_symbol" />
+                </svg>
+              </span>
+            </div>
+            <div class="timeline-text">
+              <h2>06 &nbsp;&nbsp; Exchange</h2>
+              <p>
+                We love documentation and constantly learn more about it. The
+                best thing we can do is to share it with you. So take a look
+                at our blog section and ask us any question you might have.
+                Information should be free for everyone.We also recommend
+                joining Communities like “Write the Docs” to have a source a
+                knowledge and conferences, stay on the edge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Timeline Seaction End -->
+
+      <!-- FAQ Section Start -->
+      <section class="faq_section section pb-0">
+        <div class="container">
+          <div class="section_header text-center">
+            <p class="tag">FAQs</p>
+            <h2 class="title">Frequently asked question</h2>
+            <p class="text">Have a question? We’re here to help.</p>
+          </div>
+          <div class="accordion" id="accordionFaq">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                  aria-expanded="true" aria-controls="collapse1">
+                  <div class="h3 mb-0">
+                    Why do you make such a big deal out of documentation?
+                  </div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <div class="h3 mb-0">
+                    But I can do that all by myself, right?
+                  </div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  <div class="h3 mb-0">Who much does it cost?</div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  <div class="h3 mb-0">
+                    What kind of trainings do you offer?
+                  </div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  <div class="h3 mb-0">
+                    Do you only support Swiss-based clients?
+                  </div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  <div class="h3 mb-0">
+                    What will be the first steps when you decide to work with
+                    us?
+                  </div>
+                  <span class="icon">
+                    <svg width="16" height="16" version="2.0" class="bi bi-plus-circle">
+                      <use href="#circle-arrow-plus" />
+                    </svg>
+                    <svg width="16" height="16" version="2.0" class="bi bi-dash-circle">
+                      <use href="#circle-arrow-minus" />
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <p>
+                    We love documentation and constantly learn more about it.
+                    The best thing we can do is to share it with you. So take
+                    a look at our blog section and ask us any question you
+                    might have. Information should be free for everyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/flower_meadow.svg" class="normal_img">
+          <img src="assets/images/flower_meadow_dark.svg" class="white_img">
+        </div>
+      </section>
+      <!-- FAQ Area End -->
+
+      <!-- Get Started Section Start -->
+      <section class="get_started_section section">
+        <div class="container">
+          <h2 class="text-sm-center">
+            Read to get started?
+            <span class="d-block fw-normal mt-2">
+              We can't wait to see how we can help you getting the most out of
+              your documentation.
+            </span>
+          </h2>
+          <div class="text-sm-center">
+            <a href="#" class="dp_btn dp_btn_primary text-capitalize">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <!-- Get Started Section End -->
+    </main>
+    <!-- main sections ends -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer_main" id="footer"></footer>
+    <!-- Footer Section End -->
+
+    <div class="contact-massage" id="contact-button">
+    </div>
+
+    <!-- Contact form popup -->
+    <div class="contact-popup-area" id="contact-form">
+    </div>
+  </div>
+
+  <!-- bootstrap js -->
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- custom js -->
+  <script src="./js/main.js"></script>
+
+  <script src="./js/handlebars_precompiled.js"></script>
+  <script>
+    document.getElementById('headerMain').innerHTML = Handlebars.templates['header.hbs']({})
+    document.getElementById('footer').innerHTML = Handlebars.templates['footer.hbs']({})
+    document.getElementById('contact-button').innerHTML = Handlebars.templates['contact_button.hbs']({})
+    document.getElementById('contact-form').innerHTML = Handlebars.templates['contact_form.hbs']({})
+  </script>
+  
+</body>
+
+</html>
