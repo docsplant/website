@@ -1,5 +1,9 @@
 {
     "language": "en",
+    "meta": {
+        "title": "Simple Technical Documentation with «Docs as Code»",
+        "description": "Nurture and grow your documentation with Docsplant. We support you in every stage, help out where you need it and offer valuable trainings."
+    },
     "banner_section": {
         "title": "Nurture and grow your Technical <span>Documentation</span>",
         "description": "Take advantage of our experience throughout the documentation stack."

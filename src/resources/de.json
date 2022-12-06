@@ -1,5 +1,9 @@
 {
     "language": "de",
+    "meta": {
+        "title": "Technische Dokumentation mithilfe von «Docs as Code»",
+        "description": "Der Ort, an dem Dokumentation wächst und gedeiht. Wir bieten Unterstützung in jeder Phase und bieten hilfreiche Trainings.."
+    },
     "banner_section": {
         "title": "Der Ort, an dem <br><span>Dokumentation</span><br> wächst und gedeiht",
         "description": "Docsplant ist ein erfahrenes Team aus Experten im Bereich moderner technischer Dokumentation."
