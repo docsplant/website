@@ -822,12 +822,14 @@
     {% if  language == "en" %}
     document.getElementById('headerMain').innerHTML = Handlebars.templates['header.hbs']({ show_home_button: true, is_en: true, filename: "privacy.html" })
     document.getElementById('footer').innerHTML = Handlebars.templates['footer.hbs']({})
+    document.getElementById('contact-button').innerHTML = Handlebars.templates['contact_button.hbs']({})
+    document.getElementById('contact-form').innerHTML = Handlebars.templates['contact_form.hbs']({})
     {% else %}
     document.getElementById('headerMain').innerHTML = Handlebars.templates['header.hbs']({ show_home_button: true, is_en: false, filename: "privacy.html" })
     document.getElementById('footer').innerHTML = Handlebars.templates['footer_de.hbs']({})
-    {% endif %}
     document.getElementById('contact-button').innerHTML = Handlebars.templates['contact_button.hbs']({})
-    document.getElementById('contact-form').innerHTML = Handlebars.templates['contact_form.hbs']({})
+    document.getElementById('contact-form').innerHTML = Handlebars.templates['contact_form_de.hbs']({})
+    {% endif %}
   </script>
 </body>
 
