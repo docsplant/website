@@ -505,7 +505,8 @@
 
   .contact-form::after {
     max-width: 180px;
-    top: -282px;
+    top: -230px;
+    right: -10px;
   }
 
   .contact-popup-area {

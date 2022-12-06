@@ -130,20 +130,13 @@
             },
             {
                 "title": "Note on the problem of external links",
-                "content": "According to general law, docsplant is responsible for its own content that we make available for use. A distinction must be made between our own content and cross-references (links) to content provided by other providers. These cross-reference enable docsplant to makes third-party content available for use and we marked them as a „link“.",
+                "content": "According to general law, docsplant is responsible for its own content that we make available for use. A distinction must be made between our own content and cross-references (links) to content provided by other providers. These cross-reference enable docsplant to makes third-party content available for use and we marked them as <a class=dummy_link>external links</a>.",
                 "addition": "Links are always dynamic references. When the link was first created, docsplant checked whether the third-party content might give rise to any civil or criminal liability. However, we do not constantly check the content to which we refer in our offer for changes that could give rise to a new responsibility. If we notice or are informed by others that a specific offer to which we have provided a link triggers civil or criminal liability, we will remove the reference to this offer."
             }
         ]
     },
     "privacy": {
-        "title": "Privacy Policy",
-        "description": "At docsplant we care about your privacy. To ensure that you receive the information that matters the most to you, we need to collect and process information provided by you.",
-        "sections": [
-            {
-                "title": "Scope",
-                "content": "At docsplant we care about your privacy. To ensure that you receive the information that matters the most to you, we need to collect and process information provided by you."
-            }
-        ]
+        "title": "Privacy Policy"
     },
     "about": {
         "title": "About"

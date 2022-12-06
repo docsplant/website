@@ -14,6 +14,8 @@
   * font families
   */
   --font-plus-jakarta-sans: "Plus Jakarta Sans";
+
+  --icon-external-link: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20">  <g style="stroke:rgb(35,82,124);stroke-width:1"> <line x1="5" y1="5" x2="5" y2="14" /> <line x1="14" y1="9" x2="14" y2="14" /> <line x1="5" y1="14" x2="14" y2="14" /> <line x1="5" y1="5" x2="9" y2="5"  /> <line x1="10" y1="2" x2="17" y2="2"  /> <line x1="17" y1="2" x2="17" y2="9" /> <line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.5" /> </g> </svg>');
 }
 
 body {
@@ -120,7 +122,7 @@ a {
   color: var(--background);
 }
 
-.dp_btn > .icon {
+.dp_btn>.icon {
   flex-shrink: 0;
 }
 
@@ -202,7 +204,7 @@ a {
   visibility: hidden;
 }
 
-.header-area.sticky .navbar_nav li > * {
+.header-area.sticky .navbar_nav li>* {
   box-shadow: 0 2px 4px rgba(100, 100, 111, 0.2);
 }
 
@@ -212,8 +214,8 @@ a {
   justify-content: space-between;
 }
 
-.header-logo > *,
-.footer-logo > * {
+.header-logo>*,
+.footer-logo>* {
   width: 137px;
   max-width: 100%;
   height: auto;
@@ -287,8 +289,7 @@ body.dark .normal_img {
 .menu-btn::after {
   content: "";
   position: relative;
-  background: url(../assets/images/flag.png) no-repeat scroll center center /
-    cover;
+  background: url(../assets/images/flag.png) no-repeat scroll center center / cover;
   height: 20px;
   width: 20px;
   left: 10px;
@@ -391,6 +392,7 @@ body.dark .theme_toggler span.dark {
 a:link {
   color: var(--text);
 }
+
 a:visited {
   color: var(--text);
 }
@@ -528,7 +530,7 @@ a:visited {
   z-index: -1;
 }
 
-.contributing-img > * {
+.contributing-img>* {
   border: 20px solid var(--secondary_light);
   border-radius: 50%;
   height: 152px;
@@ -568,7 +570,7 @@ a:visited {
   text-align: right;
 }
 
-.analysis .timeline-img > svg {
+.analysis .timeline-img>svg {
   width: 32px;
   height: auto;
 }
@@ -634,8 +636,7 @@ a:visited {
 }
 
 .accordion-item {
-  border-color: transparent transparent var(--bs-accordion-border-color)
-    transparent;
+  border-color: transparent transparent var(--bs-accordion-border-color) transparent;
 }
 
 .accordion-item:last-of-type {
@@ -789,7 +790,7 @@ a:visited {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.contact-message .icon > * {
+.contact-message .icon>* {
   width: 28px;
   height: auto;
   object-fit: contain;
@@ -914,6 +915,7 @@ a:visited {
   margin: 70px 0px 40px 0px;
   text-align: center;
 }
+
 .privacy-title h3 {
   margin: 70px 0px 40px 0px;
   text-align: center;
@@ -974,7 +976,7 @@ a:visited {
   justify-content: flex-end;
 }
 
-.timeline-img-1 > img {
+.timeline-img-1>img {
   width: 32px;
   height: 32px;
   margin-top: 72px;
@@ -985,7 +987,7 @@ a:visited {
   transform: rotateY(180deg) translate(40%, -25%);
 }
 
-.timeline-img-2 > img {
+.timeline-img-2>img {
   width: 200px;
   height: 212.53px;
   margin-top: 0px;
@@ -1015,7 +1017,7 @@ a:visited {
   transform: rotateY(180deg) rotateZ(45deg) translate(40%, -25%);
 }
 
-.timeline-img-5 > img {
+.timeline-img-5>img {
   width: 250px;
   padding-right: 10%;
 }
@@ -1035,4 +1037,17 @@ a:visited {
   bottom: 16px;
   right: 16px;
   pointer-events: none;
+}
+
+/* ======================================= external links ========================================== */
+
+a[href^="http"]:not(.internal_link), .dummy_link {
+  color: var(--primary);
+}
+
+a[href^="http"]:not(.internal_link)::after, .dummy_link::after {
+  content: '';
+  background: no-repeat var(--icon-external-link);
+  padding-right: 1em;
+  padding-top: -20px;
 }

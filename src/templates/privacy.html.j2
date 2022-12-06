@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang= "{{ language }}">
+<html lang="{{ language }}">
 
 <head>
   <meta charset="UTF-8" />
@@ -38,21 +38,763 @@
       <section class="privacy-section"></section>
       <div class="container">
         <div class="privacy-contant">
+          {% if language == "de" %}
           <div class="privacy-title">
-            <h3>{{ privacy.title }}</h3>
+            <h3 id="top">Datenschutzerklärung</h3>
           </div>
           <div class="pri-content">
-            <p>{{ privacy.description }}</p>
-            {% for section in privacy.sections %}
-            <h4>{{ section.title }}</h4>
-            <p>{{ section.content }}</p>
-            {% if "addition" in section %}
-            <p>{{ section.addition }}</p>
-            {% endif %}
-            {% endfor %}
+
+            <p>Mit dieser <strong>Datenschutzerklärung</strong> informieren wir, welche Personendaten wir im
+              Zusammenhang mit unseren <strong>Aktivitäten und Tätigkeiten</strong> einschliesslich unserer
+              <strong>docsplant.com-Website</strong> bearbeiten. Wir informieren insbesondere, wofür, wie und wo wir
+              Personendaten bearbeiten. Wir informieren ausserdem über die Rechte von Personen, deren Daten wir
+              bearbeiten.
+            </p>
+
+            <p>Für einzelne oder zusätzliche Aktivitäten und Tätigkeiten können weitere Datenschutzerklärungen sowie
+              sonstige rechtliche Dokumente wie Allgemeine Geschäftsbedingungen (AGB), Nutzungsbedingungen oder
+              Teilnahmebedingungen gelten.</p>
+
+            <h2 id="kontaktadressen">1. Kontaktadressen</h2>
+
+            <p>Verantwortung für die Bearbeitung von Personendaten:</p>
+
+            <p><strong id="verantwortlicher">Tobias Ahrens</strong><br />
+              Neuhofstrasse 78a<br />
+              8590 Romanshorn<br />
+              Schweiz</p>
+
+            <p><a href="mailto:datenschutz@docsplant.com">datenschutz@docsplant.com</a></p>
+
+            <p>Wir weisen darauf hin, wenn es im Einzelfall andere Verantwortliche für die Bearbeitung von Personendaten
+              gibt.</p>
+
+            <h2 id="begriffe-rechtsgrundlagen">2. Begriffe und Rechtsgrundlagen</h2>
+
+            <h3 id="begriffe">2.1 Begriffe</h3>
+
+            <p><strong>Personendaten</strong> sind <em>alle</em> Angaben, die sich auf eine bestimmte oder bestimmbare
+              Person beziehen. Eine <strong>betroffene Person</strong> ist eine Person, über die Personendaten
+              bearbeitet werden.</p>
+
+            <p><strong>Bearbeiten</strong> umfasst <em>jeden</em> Umgang mit Personendaten, <em>unabhängig</em> von den
+              angewandten Mitteln und Verfahren, insbesondere das Aufbewahren, Bekanntgeben, Beschaffen, Erheben,
+              Löschen, Speichern, Verändern, Vernichten und Verwenden von Personendaten.</p>
+
+            <h3 id="rechtsgrundlagen">2.2 Rechtsgrundlagen</h3>
+
+            <p>Wir bearbeiten Personendaten im Einklang mit dem schweizerischen Datenschutzrecht wie insbesondere dem <a
+                href="https://www.fedlex.admin.ch/eli/cc/1993/1945_1945_1945/de" rel="nofollow noopener noreferrer"
+                target="_blank" id="74841">Bundesgesetz über den Datenschutz</a> (DSG) und der <a
+                href="https://www.fedlex.admin.ch/eli/cc/1993/1962_1962_1962/de" rel="nofollow noopener"
+                target="_blank">Verordnung zum Bundesgesetz über den Datenschutz</a> (VDSG).</p>
+
+            <h2 id="art-umfang-zweck">3. Art, Umfang und Zweck</h2>
+
+            <p>Wir bearbeiten jene Personendaten, die <em>erforderlich</em> sind, um unsere Aktivitäten und Tätigkeiten
+              dauerhaft, nutzerfreundlich, sicher und zuverlässig ausüben zu können. Solche Personendaten können
+              insbesondere in die Kategorien von Bestandes- und Kontaktdaten, Browser- und Gerätedaten, Inhaltsdaten,
+              Meta- bzw. Randdaten und Nutzungsdaten, Standortdaten, Verkaufsdaten sowie Vertrags- und Zahlungsdaten
+              fallen.</p>
+
+            <p>Wir bearbeiten Personendaten während jener <em>Dauer</em>, die für den jeweiligen Zweck bzw. die
+              jeweiligen Zwecke oder gesetzlich erforderlich ist. Personendaten, deren Bearbeitung nicht mehr
+              erforderlich ist, werden anonymisiert oder gelöscht.</p>
+
+            <p>Wir können Personendaten <em>durch Dritte</em> bearbeiten lassen. Wir können Personendaten gemeinsam mit
+              Dritten bearbeiten oder an Dritte übermitteln. Bei solchen Dritten handelt es sich insbesondere um
+              spezialisierte Anbieter, deren Leistungen wir in Anspruch nehmen. Wir gewährleisten auch bei solchen
+              Dritten den Datenschutz.</p>
+
+            <p>Wir bearbeiten Personendaten <em>grundsätzlich</em> nur nach Einwilligung der betroffenen Person, es sei
+              denn, die Bearbeitung ist aus anderen rechtlichen Gründen zulässig, beispielsweise zur Erfüllung eines
+              Vertrages mit der betroffenen Person und für entsprechende vorvertragliche Massnahmen, um unsere
+              überwiegenden berechtigten Interessen zu wahren, weil die Bearbeitung aus den Umständen ersichtlich ist
+              oder nach vorgängiger Information.</p>
+
+            <p>In diesem Rahmen bearbeiten wir insbesondere Angaben, die eine betroffene Person bei der
+              Kontaktaufnahme&nbsp;– beispielsweise per Briefpost, E-Mail, Instant Messaging, Kontaktformular, Social
+              Media oder Telefon&nbsp;– oder bei der Registrierung für ein Nutzerkonto <em>freiwillig und selbst</em> an
+              uns übermittelt. Wir können solche Angaben beispielsweise in einem Adressbuch oder mit vergleichbaren
+              Hilfsmitteln speichern. Wenn wir Daten über andere Personen übermittelt erhalten, sind die übermittelnden
+              Personen verpflichtet, den Datenschutz gegenüber solchen Personen zu gewährleisten sowie die Richtigkeit
+              solcher Personendaten sicherzustellen.</p>
+
+            <p>Wir bearbeiten ausserdem Personendaten, die wir von Dritten erhalten, aus öffentlich zugänglichen Quellen
+              beschaffen oder bei der Ausübung unserer Aktivitäten und Tätigkeiten erheben, sofern und soweit eine
+              solche Bearbeitung aus rechtlichen Gründen zulässig ist.</p>
+
+            <h2 id="ausland">4. Personendaten im Ausland</h2>
+
+            <p>Wir bearbeiten Personendaten <em>grundsätzlich</em> in der Schweiz. Wir können Personendaten aber auch in
+              andere Staaten bekanntgeben bzw. exportieren, insbesondere um sie dort zu bearbeiten oder bearbeiten zu
+              lassen.</p>
+
+            <p>Wir können Personendaten in alle <a
+                href="https://de.wikipedia.org/wiki/Liste_der_Staaten_der_Erde#Tabelle"
+                rel="nofollow noopener noreferrer" target="_blank">Staaten und Territorien auf der Erde</a> sowie
+              anderswo im <a href="https://de.wikipedia.org/wiki/Universum" rel="nofollow noopener noreferrer"
+                target="_blank">Universum</a> bekanntgeben, sofern das dortige Recht nach <a
+                href="https://www.edoeb.admin.ch/edoeb/de/home/datenschutz/handel-und-wirtschaft/uebermittlung-ins-ausland.html"
+                rel="nofollow noopener noreferrer" target="_blank">Einschätzung des Eidgenössischen Datenschutz- und
+                Öffentlichkeitsbeauftragten</a> (EDÖB) oder gemäss <a
+                href="https://steigerlegal.ch/2022/09/10/ndsg-schweiz-staatenliste/" rel="nofollow noopener noreferrer"
+                target="_blank">Beschluss des Schweizerischen Bundesrates</a> einen angemessenen Datenschutz
+              gewährleistet. </p>
+
+            <p>Wir können Personendaten in Staaten, deren Recht keinen angemessenen Datenschutz gewährleistet,
+              bekanntgeben, sofern aus anderen Gründen ein geeigneter Datenschutz gewährleistet ist, beispielsweise
+              durch entsprechende vertragliche Vereinbarungen, auf Grundlage von Standarddatenschutzklauseln oder mit
+              anderen geeigneten Garantien. Ausnahmsweise können wir Personendaten in Staaten ohne angemessenen oder
+              geeigneten Datenschutz exportieren, wenn dafür die besonderen datenschutzrechtlichen Voraussetzungen
+              erfüllt sind, beispielsweise die ausdrückliche Einwilligung der betroffenen Personen oder ein
+              unmittelbarer Zusammenhang mit dem Abschluss oder der Abwicklung eines Vertrages. Wir geben betroffenen
+              Personen auf Nachfrage gerne Auskunft über allfällige Garantien oder liefern eine Kopie von Garantien.</p>
+
+            <h2 id="rechte">5. Rechte von betroffenen Personen</h2>
+
+            <p>Betroffene Personen, deren Personendaten wir bearbeiten, verfügen über die Rechte gemäss schweizerischem
+              Datenschutzrecht. Dazu zählen das Recht auf Auskunft sowie das Recht auf Berichtigung, Löschung oder
+              Sperrung der bearbeiteten Personendaten.</p>
+
+            <p>Betroffene Personen, deren Personendaten wir bearbeiten, verfügen über ein Beschwerderecht bei einer
+              zuständigen Aufsichtsbehörde. Aufsichtsbehörde für den Datenschutz in der Schweiz ist der <a
+                href="https://www.edoeb.admin.ch/edoeb/de/home/der-edoeb/kontakt.html"
+                rel="nofollow noopener noreferrer" target="_blank">Eidgenössische Datenschutz- und
+                Öffentlichkeitsbeauftragte</a> (EDÖB).</p>
+
+            <h2 id="sicherheit">6. Datensicherheit</h2>
+
+            <p>Wir treffen geeignete technische und organisatorische Massnahmen, um eine dem jeweiligen Risiko
+              angemessene Datensicherheit zu gewährleisten. Wir können aber leider keine absolute Datensicherheit
+              gewährleisten.</p>
+
+            <p>Der Zugriff auf unsere Website erfolgt mittels Transportverschlüsselung (SSL&nbsp;/ TLS, insbesondere mit
+              dem Hypertext Transfer Protocol Secure, abgekürzt HTTPS). Die meisten Browser kennzeichnen
+              Transportverschlüsselung mit einem Vorhängeschloss in der Adressleiste.</p>
+
+            <p>Unsere digitale Kommunikation unterliegt&nbsp;– wie <em>grundsätzlich</em> jede digitale
+              Kommunikation&nbsp;– der anlasslosen und verdachtsunabhängigen Massenüberwachung sowie sonstiger
+              Überwachung durch Sicherheitsbehörden in der Schweiz, im übrigen Europa, in den Vereinigten Staaten von
+              Amerika (USA) und in anderen Staaten. Wir können keinen direkten Einfluss auf die entsprechende
+              Bearbeitung von Personendaten durch Geheimdienste, Polizeistellen und andere Sicherheitsbehörden nehmen.
+            </p>
+
+            <h2 id="website">7. Nutzung der Website</h2>
+
+            <h3 id="cookies">7.1 Cookies</h3>
+
+            <p>Wir können Cookies verwenden. Bei Cookies&nbsp;– bei eigenen Cookies (First-Party-Cookies) als auch bei
+              Cookies von Dritten, deren Dienste wir verwenden (Third-Party-Cookies)&nbsp;– handelt es sich um Daten,
+              die im Browser gespeichert werden. Solche gespeicherten Daten müssen nicht auf traditionelle Cookies in
+              Textform beschränkt sein.</p>
+
+            <p>Cookies können im Browser temporär als «Session Cookies» oder für einen bestimmten Zeitraum als
+              sogenannte permanente Cookies gespeichert werden. «Session Cookies» werden automatisch gelöscht, wenn der
+              Browser geschlossen wird. Permanente Cookies haben eine bestimmte Speicherdauer. Cookies ermöglichen
+              insbesondere, einen Browser beim nächsten Besuch unserer Website wiederzuerkennen und dadurch
+              beispielsweise die Reichweite unserer Website zu messen. Permanente Cookies können aber beispielsweise
+              auch für Online-Marketing verwendet werden.</p>
+
+            <p>Cookies können in den Browser-Einstellungen jederzeit ganz oder teilweise deaktiviert sowie gelöscht
+              werden. Ohne Cookies steht unsere Website allenfalls nicht mehr in vollem Umfang zur Verfügung. Wir
+              ersuchen&nbsp;– mindestens sofern und soweit erforderlich&nbsp;– aktiv um die ausdrückliche Einwilligung
+              in die Verwendung von Cookies.</p>
+
+            <p>Bei Cookies, die für die Erfolgs- und Reichweitenmessung oder für Werbung verwendet werden, ist für
+              zahlreiche Dienste ein allgemeiner Widerspruch («Opt-out») über die <a href="https://youradchoices.ca/"
+                rel="nofollow noopener noreferrer" target="_blank">AdChoices</a> (Digital Advertising Alliance of
+              Canada), die <a href="https://optout.networkadvertising.org/" rel="nofollow noopener noreferrer"
+                target="_blank">Network Advertising Initiative</a> (NAI), <a href="https://optout.aboutads.info/"
+                rel="nofollow noopener noreferrer" target="_blank">YourAdChoices</a> (Digital Advertising Alliance) oder
+              <a href="https://www.youronlinechoices.com/ch-de/praferenzmanagement" rel="nofollow noopener noreferrer"
+                target="_blank">Your Online Choices</a> (European Interactive Digital Advertising Alliance, EDAA)
+              möglich.
+            </p>
+
+            <h3 id="logdateien">7.2 Server-Logdateien</h3>
+
+            <p>Wir können für jeden Zugriff auf unsere Website nachfolgende Angaben erfassen, sofern diese von Ihrem
+              Browser an unsere Server-Infrastruktur übermittelt werden oder von unserem Webserver ermittelt werden
+              können: Datum und Zeit einschliesslich Zeitzone, Internet Protocol (IP)-Adresse, Zugriffsstatus
+              (HTTP-Statuscode), Betriebssystem einschliesslich Benutzeroberfläche und Version, Browser einschliesslich
+              Sprache und Version, aufgerufene einzelne Unter-Seite unserer Website einschliesslich übertragener
+              Datenmenge, zuletzt im gleichen Browser-Fenster aufgerufene Webseite (Referer bzw. Referrer).</p>
+
+            <p>Wir speichern solche Angaben, die auch Personendaten darstellen können, in Server-Logdateien. Die Angaben
+              sind erforderlich, um unsere Website dauerhaft, nutzerfreundlich und zuverlässig bereitstellen sowie um
+              die Datensicherheit und damit insbesondere den Schutz von Personendaten sicherstellen zu können – auch
+              durch Dritte oder mit Hilfe von Dritten.</p>
+
+            <h3 id="zaehlpixel">7.3 Zählpixel</h3>
+
+            <p>Wir können Zählpixel auf unserer Website verwenden. Zählpixel werden auch als Web-Beacons bezeichnet. Bei
+              Zählpixeln&nbsp;– auch von Dritten, deren Dienste wir verwenden&nbsp;– handelt es sich um kleine,
+              üblicherweise nicht sichtbare Bilder, die beim Besuch unserer Website automatisch abgerufen werden. Mit
+              Zählpixeln können die gleichen Angaben wie in Server-Logdateien erfasst werden.</p>
+
+            <h3 id="kommentare">7.4 Kommentare</h3>
+
+            <p>Wir ermöglichen Ihnen, Kommentare auf unserer Website zu veröffentlichen. In diesem Rahmen bearbeiten wir
+              insbesondere jene Angaben, die eine kommentierende Person selbst an uns übermittelt, aber auch die
+              verwendete Internet Protocol (IP)-Adresse sowie Datum und Zeit. Diese Angaben werden benötigt, um die
+              Veröffentlichung von Kommentaren zu ermöglichen sowie um den Schutz vor Missbrauch sicherstellen zu
+              können, was in unserem überwiegenden berechtigten Interesse liegt.</p>
+
+            <h2 id="social-media">8. Social Media</h2>
+
+            <p>Wir sind auf Social Media-Plattformen und anderen Online-Plattformen präsent, um mit interessierten
+              Personen kommunizieren sowie über unsere Aktivitäten und Tätigkeiten informieren zu können. Im
+              Zusammenhang mit solchen Plattformen können Personendaten auch ausserhalb der Schweiz bearbeitet werden.
+            </p>
+
+            <p>Es gelten jeweils auch die Allgemeinen Geschäftsbedingungen (AGB) und Nutzungsbedingungen sowie
+              Datenschutzerklärungen und sonstigen Bestimmungen der einzelnen Betreiber solcher Plattformen. Diese
+              Bestimmungen informieren insbesondere über die Rechte von betroffenen Personen direkt gegenüber der
+              jeweiligen Plattform, wozu beispielsweise das Recht auf Auskunft zählt.</p>
+
+            <h2 id="dienste">9. Dienste von Dritten</h2>
+
+            <p>Wir nutzen Dienste von spezialisierten Dritten, um unsere Aktivitäten und Tätigkeiten dauerhaft,
+              nutzerfreundlich, sicher und zuverlässig ausüben zu können. Mit solchen Diensten können wir unter anderem
+              Funktionen und Inhalte in unsere Website einbetten. Bei einer solchen Einbettung erfassen die genutzten
+              Dienste aus technisch zwingenden Gründen mindestens zeitweilig die Internet Protocol&nbsp;(IP)-Adressen
+              der Nutzerinnen und Nutzer.</p>
+
+            <p>Für erforderliche sicherheitsrelevante, statistische und technische Zwecke können Dritte, deren Dienste
+              wir verwenden, Daten im Zusammenhang mit unseren Aktivitäten und Tätigkeiten aggregiert, anonymisiert oder
+              pseudonymisiert bearbeiten. Es handelt sich beispielsweise um Leistungs- oder Nutzungsdaten, um den
+              jeweiligen Dienst anbieten zu können.</p>
+
+            <p>Wir nutzen insbesondere:</p>
+
+            <ul>
+              <li><strong><a href="https://about.google/products/" rel="nofollow noopener noreferrer"
+                    target="_blank">Dienste von Google:</a></strong> Anbieterinnen: Google&nbsp;LLC (USA) / Google
+                Ireland Limited (Irland) für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum (EWR) und in der
+                Schweiz; Allgemeine Angaben zum Datenschutz: <a href="https://safety.google/intl/de/principles/"
+                  rel="nofollow noopener noreferrer" target="_blank">«Grundsätze zu Datenschutz und Sicherheit»</a>, <a
+                  href="https://policies.google.com/privacy?hl=de" rel="nofollow noopener noreferrer"
+                  target="_blank">Datenschutzerklärung</a>, <a
+                  href="https://privacy.google.com/intl/de/businesses/compliance/" rel="nofollow noopener noreferrer"
+                  target="_blank">«Google ist der Einhaltung der anwendbaren Datenschutzgesetze verpflichtet»</a>, <a
+                  href="https://policies.google.com/technologies/product-privacy?hl=de"
+                  rel="nofollow noopener noreferrer" target="_blank">«Leitfaden zum Datenschutz in
+                  Google-Produkten»</a>, <a href="https://policies.google.com/technologies/partner-sites?hl=de"
+                  rel="nofollow noopener noreferrer" target="_blank">«Wie wir Daten von Websites oder Apps verwenden,
+                  auf bzw. in denen unsere Dienste genutzt werden» (Angaben von Google)</a>, <a
+                  href="https://policies.google.com/technologies/cookies?hl=de" rel="nofollow noopener noreferrer"
+                  target="_blank">«Von Google verwendete Cookie-Arten und sonstige Technologien»</a>, <a
+                  href="https://adssettings.google.com/" rel="nofollow noopener noreferrer"
+                  target="_blank">«Personalisierte Werbung» (Aktivierung / Deaktivierung / Einstellungen)</a>.
+
+              </li>
+              <li><strong><a href="https://www.microsoft.com/de-ch" rel="nofollow noopener noreferrer"
+                    target="_blank">Dienste von Microsoft:</a></strong> Anbieterinnen: Microsoft Corporation
+                (USA)&nbsp;/ Microsoft Ireland Operations Limited (Irland) für Nutzerinnen und Nutzer im Europäischen
+                Wirtschaftsraum (EWR), in Grossbritannien und in der Schweiz; Allgemeine Angaben zum Datenschutz: <a
+                  href="https://privacy.microsoft.com/de-de" rel="nofollow noopener noreferrer"
+                  target="_blank">«Datenschutz bei Microsoft»</a>, <a
+                  href="https://www.microsoft.com/de-ch/trust-center/privacy" rel="nofollow noopener noreferrer"
+                  target="_blank">«Datenschutz (Trust Center)»</a>, <a
+                  href="https://privacy.microsoft.com/de-de/privacystatement" rel="nofollow noopener noreferrer"
+                  target="_blank">Datenschutzerklärung</a>.
+
+              </li>
+            </ul>
+
+            <h3 id="infrastruktur">9.1 Digitale Infrastruktur</h3>
+
+            <p>Wir nutzen Dienste von spezialisierten Dritten, um benötigte digitale Infrastruktur im Zusammenhang mit
+              unseren Aktivitäten und Tätigkeiten in Anspruch nehmen zu können. Dazu zählen beispielsweise Hosting- und
+              Speicherdienste von ausgewählten Anbietern.</p>
+
+            <p>Wir nutzen insbesondere:</p>
+
+            <ul>
+              <li><strong><a href="https://www.cloudflare.com/de-de/" rel="nofollow noopener noreferrer"
+                    target="_blank">Cloudflare:</a></strong> Content Delivery Network (CDN); Cloudflare Inc. (USA);
+                Angaben zum Datenschutz: <a
+                  href="https://www.cloudflare.com/de-de/trust-hub/privacy-and-data-protection/"
+                  rel="nofollow noopener noreferrer" target="_blank">«Datenschutz»</a>, <a
+                  href="https://www.cloudflare.com/de-de/privacypolicy/" rel="nofollow noopener noreferrer"
+                  target="_blank">Datenschutzerklärung</a>, <a href="https://www.cloudflare.com/de-de/cookie-policy/"
+                  rel="nofollow noopener noreferrer" target="_blank">Cookie-Richtlinie</a>.
+
+              </li>
+            </ul>
+
+            <h3 id="videokonferenz">9.2 Audio- und Video-Konferenzen</h3>
+
+            <p>Wir nutzen spezialisierte Dienste für Audio- und Video-Konferenzen, um online kommunizieren zu können.
+              Wir können damit beispielsweise virtuelle Besprechungen abhalten oder Online-Unterricht und Webinare
+              durchführen. Für die Teilnahme an Audio- und Video-Konferenzen gelten ergänzend die Rechtstexte der
+              einzelnen Dienste wie Datenschutzerklärungen und Nutzungsbedingungen.</p>
+
+            <p>Wir empfehlen, je nach Lebenssituation bei der Teilnahme an Audio- oder Video-Konferenzen das Mikrofon
+              standardmässig stumm zu schalten sowie den Hintergrund unscharf zu stellen oder einen virtuellen
+              Hintergrund einblenden zu lassen.</p>
+
+            <p>Wir nutzen insbesondere:</p>
+
+            <ul>
+              <li><strong><a href="https://www.microsoft.com/de-de/microsoft-teams/group-chat-software"
+                    rel="nofollow noopener noreferrer" target="_blank">Microsoft Teams:</a></strong> Plattform unter
+                anderem für Audio- und Video-Konferenzen; Anbieterin: Microsoft; Teams-spezifische Angaben: <a
+                  href="https://docs.microsoft.com/de-de/microsoftteams/teams-privacy"
+                  rel="nofollow noopener noreferrer" target="_blank">«Datenschutz und Microsoft Teams»</a>.
+
+              </li>
+            </ul>
+
+            <h3 id="schriftarten">9.3 Schriftarten</h3>
+
+            <p>Wir verwenden Dienste von Dritten, um ausgewählte Schriftarten sowie Icons, Logos und Symbole in unsere
+              Website einbetten zu können.</p>
+
+            <p>Wir verwenden insbesondere:</p>
+
+            <ul>
+              <li><strong><a href="https://fonts.google.com" rel="nofollow noopener noreferrer" target="_blank">Google
+                    Fonts:</a></strong> Schriftarten; Anbieterin: Google; Google Fonts-spezifische Angaben: <a
+                  href="https://fonts.googleblog.com/2022/11/your-privacy-and-google-fonts.html"
+                  rel="nofollow noopener noreferrer" target="_blank">«Datenschutz und Google Fonts» («Privacy and Google
+                  Fonts»)</a>, <a href="https://developers.google.com/fonts/faq/privacy?hl=de"
+                  rel="nofollow noopener noreferrer" target="_blank">«Datenschutz und Datenerfassung»</a>.
+
+              </li>
+            </ul>
+
+            <h2 id="erfolgs-und-reichweitenmessung">10. Erfolgs- und Reichweitenmessung</h2>
+
+            <p>Wir verwenden Dienste und Programme, um zu ermitteln, wie unser Online-Angebot genutzt wird. In diesem
+              Rahmen können wir beispielsweise den Erfolg und die Reichweite unserer Aktivitäten und Tätigkeiten sowie
+              die Wirkung von Verlinkungen Dritter auf unsere Website messen. Wir können aber beispielsweise auch
+              ausprobieren und vergleichen, wie unterschiedliche Versionen unseres Online-Angebotes oder Teile unseres
+              Online-Angebotes genutzt werden («A/B-Test»-Methode). Aufgrund der Ergebnisse der Erfolgs- und
+              Reichweitenmessung können wir insbesondere Fehler beheben, beliebte Inhalte stärken oder Verbesserungen an
+              unserem Online-Angebot vornehmen.</p>
+
+            <p>Bei der Verwendung von Diensten und Programmen für die Erfolgs- und Reichweitenmessung müssen die
+              Internet Protocol&nbsp;(IP)-Adressen von einzelnen Nutzerinnen und Nutzern gespeichert werden. IP-Adressen
+              werden <em>grundsätzlich</em> gekürzt («IP-Masking»), um durch die entsprechende Pseudonymisierung dem
+              Grundsatz der Datensparsamkeit zu folgen und damit den Datenschutz der Nutzerinnen und Nutzer zu
+              verbessern.</p>
+
+            <p>Bei der Verwendung von Diensten und Programmen für die Erfolgs- und Reichweitenmessung können Cookies zum
+              Einsatz kommen und Nutzerprofile erstellt werden. Nutzerprofile umfassen beispielsweise die besuchten
+              Seiten oder betrachteten Inhalte auf unserer Website, Angaben zur Grösse von Bildschirm oder
+              Browser-Fenster und den&nbsp;– zumindest ungefähren&nbsp;– Standort. <em>Grundsätzlich</em> werden
+              Nutzerprofile ausschliesslich pseudonymisiert erstellt. Wir verwenden Nutzerprofile nicht für die
+              Identifizierung einzelner Nutzerinnen und Nutzer. Einzelne Dienste von Dritten, bei denen Nutzerinnen oder
+              Nutzer angemeldet sind, können die Nutzung unseres Online-Angebotes allenfalls dem Nutzerkonto oder
+              Nutzerprofil beim jeweiligen Dienst zuordnen.</p>
+
+            <p>Wir verwenden insbesondere:</p>
+
+            <ul>
+              <li><strong><a href="https://plausible.io/" rel="nofollow noopener noreferrer" target="_blank">Plausible
+                    Analytics:</a></strong> Erfolgs- und Reichweitenmessung; Anbieterin: Plausible Insights&nbsp;OÜ
+                (Estland); Angaben zum Datenschutz: <em>Keine</em> Bearbeitung von Personendaten und <em>keine</em>
+                Verwendung von Cookies, <a href="https://plausible.io/privacy" rel="nofollow noopener noreferrer"
+                  target="_blank">Datenschutzerklärung</a>, <a href="https://plausible.io/data-policy"
+                  rel="nofollow noopener noreferrer" target="_blank">«Daten-Richtlinie» («Data Policy»)</a>, <a
+                  href="https://plausible.io/about" rel="nofollow noopener noreferrer" target="_blank">«Über Plausible
+                  Analytics» («About Plausible Analytics»)</a>, <a
+                  href="https://plausible.io/privacy-focused-web-analytics" rel="nofollow noopener noreferrer"
+                  target="_blank">«Google Analytics-Alternative mit Datenschutz-Fokus» («Privacy-focused Google
+                  Analytics Alternative»)</a>.
+
+              </li>
+            </ul>
+
+            <h2 id="schlussbestimmungen">11. Schlussbestimmungen</h2>
+
+            <p>Wir haben diese Datenschutzerklärung mit dem <a
+                href="https://www.datenschutzpartner.ch/angebot-datenschutz-generator/"
+                rel="nofollow noopener noreferrer" target="_blank">Datenschutz-Generator</a> von <a
+                href="https://datenschutzpartner.ch/" rel="nofollow noopener noreferrer"
+                target="_blank">Datenschutzpartner</a> erstellt.</p>
+
+            <p>Wir können diese Datenschutzerklärung jederzeit anpassen und ergänzen. Wir werden über solche Anpassungen
+              und Ergänzungen in geeigneter Form informieren, insbesondere durch Veröffentlichung der jeweils aktuellen
+              Datenschutzerklärung auf unserer Website.</p>
+            {% else %}
+            <div class="privacy-title">
+              <h3 id="top">Privacy Policy</h3>
+            </div>
+            <div class="pri-content">
+
+              <p>This <strong>privacy statement</strong> informs you about the personal data we process in
+                connection with our <strong>activities and operations</strong>, including our
+                <strong>docsplant.com</strong> website. In particular, we provide information about what we
+                process personal data for, how we process it, and where we process it. We also provide
+                information about the rights of individuals whose data we process.
+              </p>
+
+              <p>For individual or additional activities and activities, further data protection statements
+                and other legal documents such as general terms and conditions (GTC), terms of use or
+                conditions of participation may apply.
+
+              <h2 id="kontaktadressen">1. Contact Addresses</h2>
+
+              <p>Responsibility for the processing of personal data:</p>
+
+              <p><strong id="verantwortlicher">Tobias Ahrens</strong><br />
+                Neuhofstrasse 78a<br />
+                8590 Romanshorn<br />
+                Schweiz</p>
+
+              <p><a href="mailto:datenschutz@docsplant.com">privacy@docsplant.com</a></p>
+
+              <p>We will explicitly point out if there are other persons responsible for the processing of personal data
+                in individual cases.</p>
+
+              <h2 id="begriffe-rechtsgrundlagen">2. Terms and legal bases</h2>
+
+              <h3 id="begriffe">2.1 Terms</h3>
+
+              <p><strong>Personal data</strong> is <em>any</em> information that relates to an identified or
+                identifiable
+                person. A <strong>data subject</strong> is a person about whom personal data is processed.</p>
+
+              <p><strong>Processing</strong> includes <em>any</em> handling of personal data, <em>regardless</em> of the
+                means and procedures used, in particular the storage, disclosure, procurement, collection, deletion,
+                storage, modification, destruction and use of personal data.</p>
+
+              <h3 id="rechtsgrundlagen">2.2 Legal basis</h3>
+
+              <p>We process personal data in accordance with Swiss data protection law, such as in particular the <a
+                  href="https://www.fedlex.admin.ch/eli/cc/1993/1945_1945_1945/en" rel="nofollow noopener noreferrer"
+                  target="_blank" id="74841">Federal Data Protection Act</a> (FADP) and the <a
+                  href="https://www.fedlex.admin.ch/eli/cc/1993/1962_1962_1962/en" rel="nofollow noopener"
+                  target="_blank">Ordinance to the Federal Data Protection Act</a> (FDPA).</p>
+
+              <h2 id="art-umfang-zweck">3. Method, Scope and Purpose </h2>
+
+              <p>We process those personal data that are <em>necessary</em> to carry out our activities and
+                operations in a permanent, user-friendly, secure and reliable manner. In particular, such
+                personal data may fall into the categories of inventory and contact data, browser and device
+                data, content data, meta or marginal data and usage data, location data, sales data and
+                contract and payment data.</p>
+
+
+              <p>We process personal data for the <em>period</em> of time required for the respectivepurpose(s)
+                or as required by law. Personal data whose processing is no longer required will be anonymized or
+                deleted.</p>
+
+              <p>We may have personal data processed by <em>third parties</em>. We may process personal data jointly
+                with third parties
+                or transmit it to third parties. Such third parties are, in particular, specialized providers whose
+                services we use.
+                We also guarantee data protection for such third parties.</p>
+
+              <p>As a matter of principle, we process personal data <em>only</em> with the consent of the data
+                subject, unless the processing is permitted for other legal reasons, for example, for the performance
+                of a contract with the data subject and for corresponding pre-contractual measures, to protect our
+                overriding legitimate interests, because the processing is evident from the circumstances or after
+                prior information.</p>
+
+              <p>In this context, we process in particular information that a data subject <em>voluntarily</em>
+                and personally provides to us when contacting us&nbsp;– for example, by letter, e-mail, instant
+                messaging, contact form, social media or telephone &nbsp;– or when registering for a user account. We
+                may store such information, for example, in an address book or with comparable tools. If we receive
+                data transmitted via other persons, the transmitting persons are obliged to ensure data protection
+                with respect to such persons as well as to ensure the accuracy of such personal data.</p>
+
+              <p>We also process personal data that we receive from third parties, obtain from publicly available
+                sources or collect in the course of our activities and operations, if and to the extent that such
+                processing is permitted for legal reasons.</p>
+
+              <h2 id="ausland">4. Transborder Data Flows</h2>
+
+              <p>We <em>generally</em> process personal data in Switzerland. However, we may also disclose or export
+                personal data to other countries, in particular in order to process it or have it processed there.</p>
+
+              <p>We may disclose personal data to all <a
+                  href="https://en.wikipedia.org/wiki/List_of_sovereign_states#table" rel="nofollow noopener noreferrer"
+                  target="_blank">states and territories on Earth</a> as well as
+                elsewhere in the <a href="https://en.wikipedia.org/wiki/Universe" rel="nofollow noopener noreferrer"
+                  target="_blank">universe</a>, provided that the law there guarantees adequate data protection in the
+                opinion of the <a
+                  href="https://www.edoeb.admin.ch/edoeb/en/home/data-protection/handel-und-wirtschaft/transborder-data-flows.html"
+                  rel="nofollow noopener noreferrer" target="_blank">Federal Data Protection and Information
+                  Commissioner</a> (FDPIC) or in accordance with a decision of the <a
+                  href="https://steigerlegal.ch/2022/09/10/ndsg-schweiz-staatenliste/"
+                  rel="nofollow noopener noreferrer" target="_blank">Swiss Federal Council</a>.</p>
+
+              <p>We may disclose personal data to countries whose laws do not ensure adequate data protection,
+                provided that adequate data protection is ensured for other reasons, for example, through appropriate
+                contractual agreements, on the basis of standard data protection clauses or with other suitable
+                safeguards. Exceptionally, we may export personal data to countries without adequate or appropriate
+                data protection if the special data protection requirements are met, for example, the express consent
+                of the data subjects or a direct connection with the conclusion or performance of a contract. We will
+                be happy to provide data subjects with information about any guarantees or provide a copy of any
+                guarantees upon request.
+              </p>
+
+              <h2 id="rechte">5. Data Subject Rights</h2>
+
+              <p>Data subjects whose personal data we process have the rights under the Swiss data protection law.
+                These include the right to information as well as the right to correction, deletion or blocking of the
+                personal data processed.</p>
+
+
+              <p>Data subjects whose personal data we process have a right of appeal to a competent supervisory
+                authority. The supervisory authority for data protection in Switzerland is the <a
+                  href="https://www.edoeb.admin.ch/edoeb/de/home/der-edoeb/kontakt.html"
+                  rel="nofollow noopener noreferrer" target="_blank">Federal Data Protection and Information
+                  Commissioner</a> (FDPIC).</p>
+
+              <h2 id="sicherheit">6. Data Security</h2>
+
+              <p>We take appropriate technical and organizational measures to ensure data security appropriate to the
+                respective risk. However, we can unfortunately not guarantee absolute data security.</p>
+
+              <p>Access to our website takes place using transport encryption (SSL / TLS, in particular with the
+                Hypertext Transfer Protocol Secure, abbreviated HTTPS). Most browsers mark transport encryption with a
+                lock in the address bar.</p>
+
+              <p>Our digital communication is subject - as is <em>basically all</em> digital communication&nbsp;– to
+                mass surveillance without cause and without suspicion, as well as other surveillance by security
+                authorities in Switzerland, the rest of Europe, the United States of America (USA) and other
+                countries. We cannot directly influence the corresponding processing of personal data by secret
+                services, police agencies and other security authorities.</p>
+
+              <h2 id="website">7. Website Usage</h2>
+
+              <h3 id="cookies">7.1 Cookies</h3>
+
+              <p>We may use cookies. Cookies&nbsp;– our own cookies (first-party cookies) as well as cookies from
+                third parties whose services we use (third-party cookies)&nbsp;– are data that are stored in the
+                browser. Such stored data need not be limited to traditional cookies in text form.Wir können Cookies
+                verwenden. Bei Cookies&nbsp;– bei eigenen Cookies (First-Party-Cookies) als auch</p>
+
+              <p>Cookies can be stored in the browser temporarily as "session cookies" or for a certain period of time
+                as so-called permanent cookies. "Session cookies" are automatically deleted when the browser is
+                closed. Permanent cookies have a specific storage period. In particular, cookies enable us to
+                recognize a browser the next time it visits our website and thus, for example, to measure the reach of
+                our website. However, permanent cookies can also be used for online marketing, for example.</p>
+
+              <p>Cookies can be completely or partially deactivated and deleted at any time in the browser settings.
+                Without cookies, our website may no longer be fully available. We actively request&nbsp;– at least if
+                and to the extent necessary&nbsp;– the express consent to the use of cookies.</p>
+
+              <p>In the case of cookies used for performance and reach measurement or for advertising, a general
+                objection ("opt-out") is possible for numerous services via <a href="https://youradchoices.ca/"
+                  rel="nofollow noopener noreferrer" target="_blank">AdChoices</a> (Digital Advertising Alliance of
+                Canada), the <a href="https://optout.networkadvertising.org/" rel="nofollow noopener noreferrer"
+                  target="_blank">Network Advertising Initiative</a> (NAI), <a href="https://optout.aboutads.info/"
+                  rel="nofollow noopener noreferrer" target="_blank">YourAdChoices</a> (Digital Advertising Alliance)
+                or <a href="https://www.youronlinechoices.com/uk/your-ad-choices" rel="nofollow noopener noreferrer"
+                  target="_blank">Your Online Choices</a> (European Interactive Digital Advertising Alliance, EDAA).
+              </p>
+
+              <h3 id="logdateien">7.2 Server Log Files</h3>
+
+              <p>We may collect the following information for each access to our website, provided that this
+                information is transmitted by your browser to our server infrastructure or can be determined by our
+                web server: Date and time including time zone, Internet Protocol (IP) address, access status (HTTP
+                status code), operating system including user interface and version, browser including language and
+                version, individual sub-page of our website accessed including amount of data transferred, website
+                last accessed in the same browser window (referer or referrer).</p>
+
+              <p>We store such information, which may also constitute personal data, in server log files. The
+                information is necessary to provide our website permanently, user-friendly and reliable and to ensure
+                data security and thus in particular the protection of personal data - also by third parties or with
+                the help of third parties.</p>
+
+              <h3 id="zaehlpixel">7.3 Tracking pixel</h3>
+
+              <p>We may use tracking pixels on our website. Tracking pixels are also known as web beacons. Tracking
+                pixels&nbsp;– also from third parties whose services we use&nbsp;– are small, usually invisible images
+                that are automatically retrieved when you visit our website. Counting pixels can be used to collect
+                the same information as server log files.</p>
+
+              <h3 id="kommentare">7.4 Comments</h3>
+
+              <p>We enable you to publish comments on our website. In this context, we process in particular the
+                information that a commenting person transmits to us, but also the Internet Protocol (IP) address used
+                as well as the date and time. This information is required to enable the publication of comments and
+                to ensure protection against misuse, which is in our overriding legitimate interest.</p>
+
+              <h2 id="social-media">8. Social Media</h2>
+
+              <p>We are present on social media platforms and other online platforms in order to communicate with
+                interested persons and to provide information about our activities and operations. In connection with
+                such platforms, personal data may also be processed outside of Switzerland.</p>
+
+              <p>The General Terms and Conditions (GTC) and Terms of Use as well as data protection declarations and
+                other provisions of the individual operators of such platforms also apply in each case. These
+                provisions inform in particular about the rights of data subjects directly vis-à-vis the respective
+                platform, which includes, for example, the right to information.</p>
+
+              <h2 id="dienste">9. Third Party Services</h2>
+
+              <p>We use services of specialized third parties to perform our activities and operations in a durable,
+                user-friendly, secure and reliable manner. With such services, we can, among other things, embed
+                functions and content in our website. In the case of such embedding, the services used record the
+                Internet Protocol (IP) addresses of the users at least temporarily for technically compelling reasons.
+              </p>
+
+              <p>For necessary security-related, statistical and technical purposes, third parties whose services we
+                use may process data related to our activities and operations in aggregated, anonymized or
+                pseudonymized form. This is, for example, performance or usage data in order to be able to offer the
+                respective service.</p>
+
+              <p>In particular, we use:</p>
+
+              <ul>
+                <li><strong><a href="https://about.google/products/" rel="nofollow noopener noreferrer"
+                      target="_blank">Google services:</a></strong> Provider: Google LLC (USA) / Google Ireland
+                  Limited (Ireland) for users in the European Economic Area (EEA) and Switzerland; General information
+                  on data protection: <a href="https://safety.google/intl/en/principles/"
+                    rel="nofollow noopener noreferrer" target="_blank">«Our privacy and security principles»</a>, <a
+                    href="https://policies.google.com/privacy?hl=en" rel="nofollow noopener noreferrer"
+                    target="_blank">Privacy Policy</a>, <a
+                    href="https://privacy.google.com/intl/en/businesses/compliance/" rel="nofollow noopener noreferrer"
+                    target="_blank">«Google is committed to complying with
+                    applicable data protection laws»</a>, <a
+                    href="https://policies.google.com/technologies/product-privacy?hl=en"
+                    rel="nofollow noopener noreferrer" target="_blank">«Privacy Policy Guide in Google Products»</a>,
+                  <a href="https://policies.google.com/technologies/partner-sites?hl=en"
+                    rel="nofollow noopener noreferrer" target="_blank">«How we use data from websites or apps where
+                    our services are used" (information provided by Google)</a>, <a
+                    href="https://policies.google.com/technologies/cookies?hl=en" rel="nofollow noopener noreferrer"
+                    target="_blank">«Types of cookies and other technologies used by Google»</a>, <a
+                    href="https://adssettings.google.com/" rel="nofollow noopener noreferrer"
+                    target="_blank">«Personalized advertising» (activation / deactivation / settings)</a>.
+                </li>
+                <li><strong><a href="https://www.microsoft.com/" rel="nofollow noopener noreferrer"
+                      target="_blank">microsoft services:</a></strong> Provider: Microsoft Corporation
+                  (USA)&nbsp;/ Microsoft Ireland Operations Limited (Irland) for users in the European Economic Area
+                  (EEA), the United Kingdom and Switzerland; General information on data protection: <a
+                    href="https://privacy.microsoft.com/" rel="nofollow noopener noreferrer" target="_blank">«Data
+                    protection at Microsoft»</a>, <a href="https://www.microsoft.com/trust-center/privacy"
+                    rel="nofollow noopener noreferrer" target="_blank">Data protection (Trust Center)»</a>, <a
+                    href="https://privacy.microsoft.com/privacystatement" rel="nofollow noopener noreferrer"
+                    target="_blank">privacy policy</a>.
+
+                </li>
+              </ul>
+
+              <h3 id="infrastruktur">9.1 Digital Infrastructure</h3>
+
+              <p>We use services from specialized third parties to make use of required digital infrastructure in
+                connection with our activities and operations. These include, for example, hosting and storage
+                services from selected providers.</p>
+
+              <p>In particular, we use::</p>
+
+              <ul>
+                <li><strong><a href="https://www.cloudflare.com/de-de/" rel="nofollow noopener noreferrer"
+                      target="_blank">Cloudflare:</a></strong> Content Delivery Network (CDN); Cloudflare Inc. (USA);
+                  General information on data protection: <a
+                    href="https://www.cloudflare.com/trust-hub/privacy-and-data-protection/"
+                    rel="nofollow noopener noreferrer" target="_blank">«Privacy protection</a>, <a
+                    href="https://www.cloudflare.com/privacypolicy/" rel="nofollow noopener noreferrer"
+                    target="_blank">Privacy Policy</a>, <a href="https://www.cloudflare.com/cookie-policy/"
+                    rel="nofollow noopener noreferrer" target="_blank">Cookie Policy</a>.
+
+                </li>
+              </ul>
+
+              <h3 id="videokonferenz">9.2 Audio And Video Conferences</h3>
+
+              <p>We use specialized audio and video conferencing services to communicate online. We can use them, for
+                example, to hold virtual meetings or conduct online lessons and webinars. For participation in audio
+                and video conferences, the legal texts of the individual services such as privacy statements and terms
+                of use apply in addition.</p>
+
+              <p>Depending on the life situation, we recommend muting the microphone by default when participating in
+                audio or video conferences, as well as blurring the background or fading in a virtual background.</p>
+
+              <p>We use in particular:</p>
+
+              <ul>
+                <li><strong><a href="https://www.microsoft.com/microsoft-teams/group-chat-software"
+                      rel="nofollow noopener noreferrer" target="_blank">Microsoft Teams:</a></strong> Platform for
+                  audio and video conferencing, among other things; Provider: Microsoft; Teams-specific information:
+                  <a href="https://docs.microsoft.com/microsoftteams/teams-privacy" rel="nofollow noopener noreferrer"
+                    target="_blank">«Privacy and Microsoft Teams"»</a>.
+
+                </li>
+              </ul>
+
+              <h3 id="schriftarten">9.3 Fonts</h3>
+
+              <p>We use third party services to embed selected fonts as well as icons, logos and symbols on our
+                website.</p>
+
+              <p>We use in particular:</p>
+
+              <ul>
+                <li><strong><a href="https://fonts.google.com" rel="nofollow noopener noreferrer" target="_blank">Google
+                      Fonts:</a></strong>; Provider: Google; Google Fonts-specific information: <a
+                    href="https://fonts.googleblog.com/2022/11/your-privacy-and-google-fonts.html"
+                    rel="nofollow noopener noreferrer" target="_blank">«Privacy and Google Fonts»</a>, <a
+                    href="https://developers.google.com/fonts/faq/privacy" rel="nofollow noopener noreferrer"
+                    target="_blank">«Privacy and Data Collection»</a>.
+
+                </li>
+              </ul>
+
+              <h2 id="erfolgs-und-reichweitenmessung">10. Performance And Reach Measurement</h2>
+
+              <p>We use services and programs to determine how our online offering is used. In this context, we can,
+                for example, measure the success and reach of our activities and operations as well as the effect of
+                third-party links to our website. However, we can also, for example, test and compare how different
+                versions of our online offering or parts of our online offering are used ("A/B test" method). Based on
+                the results of the performance and reach measurement, we can in particular correct errors, strengthen
+                popular content or make improvements to our online offering.</p>
+
+              <p>When using services and programs for performance and reach measurement, the Internet Protocol (IP)
+                addresses of individual users must be stored. IP addresses are <em>generally</em> shortened ("IP
+                masking") in order to follow the principle of data economy through the corresponding pseudonymization
+                and thus to improve user data protection.</p>
+
+              <p>When using services and programs for performance and reach measurement, cookies may be used and user
+                profiles may be created. User profiles include, for example, the pages visited or content viewed on
+                our website, information on the size of the screen or browser window and the - at least approximate -
+                location. As a <em>matter of principle</em>, user profiles are created exclusively on a pseudonymous
+                basis. We do not use user profiles to identify individual users. Individual services of third parties
+                to which users are logged in may, at most, assign the use of our online offer to the user account or
+                user profile at the respective service.</p>
+
+              <p>We use in particular:</p>
+
+              <ul>
+                <li><strong><a href="https://plausible.io/" rel="nofollow noopener noreferrer" target="_blank">Plausible
+                      Analytics:</a></strong> Performance And Reach Measurement; Provider: Plausible Insights&nbsp;OÜ
+                  (Estland); Data protection information: <em>No</em> no processing of personal data and <em>no</em>
+                  use of cookies, <a href="https://plausible.io/privacy" rel="nofollow noopener noreferrer"
+                    target="_blank">privacy policy</a>, <a href="https://plausible.io/data-policy"
+                    rel="nofollow noopener noreferrer" target="_blank">«Data Policy»</a>, <a
+                    href="https://plausible.io/about" rel="nofollow noopener noreferrer" target="_blank">«About
+                    Plausible Analytics»</a>, <a href="https://plausible.io/privacy-focused-web-analytics"
+                    rel="nofollow noopener noreferrer" target="_blank">«Privacy-focused Google Analytics
+                    Alternative»</a>.
+
+                </li>
+              </ul>
+
+              <h2 id="schlussbestimmungen">11. Final Notice</h2>
+
+              <p>We have created this data protection declaration with the <a
+                  href="https://www.datenschutzpartner.ch/angebot-datenschutz-generator/"
+                  rel="nofollow noopener noreferrer" target="_blank">data protection generator</a>, provided by <a
+                  href="https://datenschutzpartner.ch/" rel="nofollow noopener noreferrer"
+                  target="_blank">Datenschutzpartner</a>.</p>
+
+              <p>We can adapt and supplement this data protection declaration at any time. We will inform about such
+                adjustments and additions in an appropriate form, in particular by publishing the respective current
+                privacy policy on our website.</p>
+
+              <p>«This Privacy Policy is an unofficial translation from the original German language version.»</p>
+              {% endif %}
+            </div>
           </div>
         </div>
-      </div>
     </main>
     <!-- main sections ends -->
 

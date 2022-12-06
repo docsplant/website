@@ -126,24 +126,17 @@
             {
                 "title": "Urheberrecht",
                 "content": "Alle Inhalte und Strukturen dieser Website sind urheber- und leistungsschutzrechtlich geschützt. Die Veröffentlichung im World Wide Web oder in sonstigen Diensten des Internets bedeutet noch keine Einverständniserklärung für eine anderweitige Nutzung durch Dritte. Jede vom schweizer Urheberrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung von Docsplant.",
-                "addition": "Wir erlauben und begrüßen ausdrücklich das Zitieren unserer Dokumente sowie das Setzen von Links auf unsere Website, solange kenntlich gemacht wird, dass es sich um Inhalte des Webauftritts von Docsplant handelt und diese Inhalte nicht in Verbindung mit Inhalten Dritter gebracht werden, die den Interessen von Docsplant widersprechen."
+                "addition": "Wir erlauben und begrüßen ausdrücklich das Zitieren unserer Dokumente sowie das Setzen von Links auf unsere Website, solange kenntlich gemacht wird, dass es sich um Inhalte des Webauftritts von Docsplant handelt und diese Inhalte nicht in Verbindung mit Inhalten Dritter gebracht werden, die den Interessen von Docsplant widersprechen."
             },
             {
                 "title": "Hinweis zur Problematik von externen Links",
-                "content": "Docsplant ist als Inhaltsanbieterin nach § 7 Abs. 1 Telemediengesetz für die eigenen Inhalte, die sie zur Nutzung bereithält, nach den allgemeinen Gesetzen verantwortlich. Von diesen eigenen Inhalten sind Querverweise (Links) auf die von anderen Anbietern bereitgehaltenen Inhalte zu unterscheiden. Durch den Querverweis hält Docsplant insofern fremde Inhalte zur Nutzung bereit, die als „Link“ gekennzeichnet sind.",
+                "content": "Docsplant ist für die eigenen Inhalte, die wir zur Nutzung bereithalten, nach den allgemeinen Gesetzen verantwortlich. Von diesen eigenen Inhalten sind Querverweise (Links) auf die von anderen Anbietern bereitgehaltenen Inhalte zu unterscheiden. Durch den Querverweis hält Docsplant insofern fremde Inhalte zur Nutzung bereit, die als <a class=dummy_link>externer Links</a> eindeutig gekennzeichnet sind.",
                 "addition": "Bei Links handelt es sich stets um dynamische Verweisungen. Docsplant hat bei der erstmaligen Verknüpfung zwar den fremden Inhalt daraufhin überprüft, ob durch ihn eine mögliche zivilrechtliche oder strafrechtliche Verantwortlichkeit ausgelöst wird. Wir überprüfen aber die Inhalte, auf die wir in unserem Angebot verweisen, nicht ständig auf Veränderungen, die eine Verantwortlichkeit neu begründen könnten. Wenn wir feststellt oder von anderen darauf hingewiesen werden, dass ein konkretes Angebot, zu dem wir einen Link bereitgestellt haben, eine zivil- oder strafrechtliche Verantwortlichkeit auslöst, werden wir den Verweis auf dieses Angebot aufheben."
             }
         ]
     },
     "privacy": {
-        "title": "Datenschutzerklärung",
-        "description": "At Docsplant we care about your privacy. To ensure that you receive the information that matters the most to you, we need to collect and process information provided by you.",
-        "sections": [
-            {
-                "title": "Scope",
-                "content": "At Docsplant we care about your privacy. To ensure that you receive the information that matters the most to you, we need to collect and process information provided by you."
-            }
-        ]
+        "title": "Datenschutzerklärung"
     },
     "about": {
         "title": "Impressum"
