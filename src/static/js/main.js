@@ -14,6 +14,19 @@ function chatBox() {
   chatBtn.addEventListener("click", toggle);
 };
 
+function stackRibbon() {
+  const stackBtn = document.querySelector(".stack-top");
+
+  if (!stackBtn) return;
+
+  function openChat() {
+    document.querySelector(".contact-message").classList.add("active");
+    document.querySelector(".contact-popup-area").classList.add("active");
+  }
+
+  stackBtn.addEventListener("click", openChat);
+};
+
 // submit
 function SubmitForm() {
   const subBtn = document.querySelector(".submit-form");
@@ -72,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   SubmitForm();
   // chatbox
   chatBox();
+  stackRibbon();
   // mobile menu
   mobileMenu();
   // sticky header

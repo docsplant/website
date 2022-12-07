@@ -1051,3 +1051,19 @@ a[href^="http"]:not(.internal_link)::after, .dummy_link::after {
   padding-right: 1em;
   padding-top: -20px;
 }
+
+/* ======================================= Limited time offer ========================================== */
+
+.stack-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 300%) rotate(-45deg);
+  color: #fff;
+  text-align: center;
+  width: 400px;
+  transform-origin: bottom left;
+  padding:5px 0 15px;
+  background: #660022;
+  cursor: pointer;
+}
